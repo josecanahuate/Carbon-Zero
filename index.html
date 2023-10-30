@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+<html class="no-js" lang="zxx">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis.">
+	<meta name='copyright' content='© 2023 CarbonZero. Todos los derechos reservados.'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords"
+		content="huella de carbono, calcular huella de carbono, reducción de emisiones, sostenibilidad, impacto ambiental, huella ecológica, calculadora ambiental">
+	<meta name="author" content="Tristar Develops - CarbonZero">
+
+	<!--SUBIR IMAGEN A FB Y TOMAR LA URL DE AHI ----------------------------------------------------->
+	<meta property="og:image" content="images/courses/logo1.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:aspect_ratio" content="1.91">
+	<meta property="og:title" content="CarbonZero - Calculadora de Huella de Carbono">
+	<meta property="og:description"
+		content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis">
+	<meta property="og:site_name" content="CarbonZero">
+	<title>CarbonZero - Calculadora de Huella de Carbono</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/courses/favicon.png">
+
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	 <!-- Preload de Imágenes del Slider -->
+	 <img src="images/slider/19.webp" alt="Slider Image 1" style="display: none;">
+	 <!-- Agrega más elementos <img> para las demás imágenes del slider -->
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="css/niceselect.css">
+	<!-- Fancy Box CSS -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- Fancy Box CSS -->
+	<link rel="stylesheet" href="css/cube-portfolio.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- Slick Nav CSS -->
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Eduland Stylesheet -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Eduland Colors -->
+	<link rel="stylesheet" href="css/colors/color1.css">
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<!-- Header Inner -->
+		<div class="header-inner overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img src="images/courses/logo3.png"
+									style="height: 60px; margin-top: -17px;" alt="CarbonZero Logo">CarbonZero</a>
+						</div>
+						<!--/ End Logo -->
+
+						<div class="mobile-menu"></div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-12">
+						<div class="menu-bar">
+							<nav class="navbar navbar-default">
+								<div class="navbar-collapse">
+									<!-- Main Menu -->
+									<ul id="nav" class="nav menu navbar-nav">
+										<li class="active"><a href="index.html"><i class="fa fa-home"></i>Inicio</a>
+										</li>
+										<li><a href="personas.html"><i class="fa fa-clone"></i>Personas</a></li>
+										<li><a href="#"><i class="fa fa-clone"></i>Calculadora</a>
+											<ul class="dropdown">
+												<li><a href="calculadora_personal.html">Personal</a></li>
+												<li><a href="calculadora_empresa.html">Empresa</a></li>
+											</ul>
+										</li>
+										<li><a href="recursos.html"><i class="fa fa-bullhorn"></i>Recursos</a></li>
+										<li><a href="nosotros.html"><i class="fa fa-bullhorn"></i>Nosotros</a></li>
+									</ul>
+									<!-- End Main Menu -->
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+
+	<!-- Slider Area -->
+	<section class="home-slider">
+		<div class="slider-active">
+			<!-- Single Slider -->
+			<div class="single-slider overlay">
+				<div class="slider-image" id="images" src="" alt="Imagen"
+					style="background-image:url('images/slider/19.webp')"></div>
+
+				<script>
+					var images = ['images/slider/1.webp', 'images/slider/20.webp', 'images/slider/7.webp', 'images/slider/11.webp', 'images/slider/13.webp', 'images/slider/19.webp', 'images/slider/17.webp'];
+					var currentIndex = 0;
+					var intervalDuration = 30000; // Tiempo en milisegundos entre cada cambio de imagen
+
+					function changeBackgroundImage() {
+						var imageContainer = document.getElementById('images');
+						imageContainer.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+						currentIndex = (currentIndex + 1) % images.length;
+					}
+
+					setInterval(changeBackgroundImage, intervalDuration);
+				</script>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-10 col-12">
+							<!-- Slider Content -->
+							<div class="slider-content">
+								<h1 class="slider-title"><span>¡Vive de forma sostenible y reduce tu huella de
+										carbono!</span>Calculadora<b> Carbon Zero</b></h1>
+								<p class="slider-text" style="text-align: justify;">
+									¡Reduce tu huella de carbono con la Calculadora Carbon Zero! Vive de forma
+									sostenible midiendo y gestionando tus emisiones de carbono. Ingresa tus actividades
+									y recibe un informe detallado con pasos concretos para tener un impacto positivo.
+									Adopta energías renovables, electrodomésticos eficientes, reciclaje y transporte
+									ecológico. ¡Comienza hoy y contribuye a un futuro más verde para todos!</p>
+								<!-- Button -->
+								<div class="button">
+									<a href="nosotros.html" class="btn white">Nosotros</a>
+									<a href="calculadora_personal.html" class="btn white primary">Calculadora</a>
+								</div>
+								<!--/ End Button -->
+							</div>
+							<!--/ End Slider Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Single Slider -->
+		</div>
+	</section>
+
+
+	<section class="events section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="section-title bg">
+						<h2>Huella<span> de Carbono.</span></h2>
+						<p>Dando pasos hacia un futuro sostenible.</p>
+						<div class="icon"><i class="fa fa-paper-plane"></i></div>
+					</div>
+				</div>
+				<div class="course-body">
+					<p class="contenidotitle" style="text-align: justify;">
+					<p class="slider-text mundo" style="text-align: justify; margin-bottom: 30px;">En un mundo donde la
+						conciencia ambiental se ha vuelto fundamental, la calculadora de huella de carbono emerge como
+						una herramienta esencial tanto para individuos como para empresas comprometidos con la
+						sostenibilidad. Esta potente herramienta no solo permite la medición de nuestra contribución a
+						la emisión de gases de efecto invernadero (GEI), sino que también nos empodera para tomar
+						medidas concretas que reduzcan nuestro impacto en el planeta.<br><br>
+						La "huella de carbono", que se refiere a la cantidad total de gases de efecto invernadero (GEI),
+						principalmente dióxido de carbono (CO2) y otros compuestos, liberados a la atmósfera debido a
+						actividades humanas, como el uso de energía, transporte, producción de alimentos y fabricación
+						de productos, juega un papel central en esta ecuación. La huella de carbono se mide en unidades
+						de dióxido de carbono equivalente (CO2e) y se utiliza para evaluar el impacto ambiental de
+						individuos, organizaciones, productos y servicios. En esencia, la huella de carbono es una
+						herramienta que cuantifica cómo nuestras acciones cotidianas contribuyen al cambio climático y
+						al calentamiento global. Al calcularla, no solo estamos midiendo nuestro impacto, sino que
+						también estamos dando el primer paso hacia su reducción.</p>
+					</p>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6" style="margin-top: 10px;">
+						<div class="course-body" style="margin-top: 10px;">
+							<h3 class="c-title" style="text-align: center;"><strong>Huella de Carbono Personal</strong>
+							</h3>
+							<p class="contenidotitle importancia" style="text-align: justify; margin-top: 10px;">La
+								huella de carbono personal es la cantidad de emisiones de gases de efecto invernadero
+								(GEI) que un individuo genera en su vida cotidiana. Esto incluye actividades como
+								desplazarse, consumir, alimentarse y utilizar recursos como la energía. Según
+								estimaciones de la ONG ambiental The Nature Conservancy, cada habitante del planeta
+								genera un promedio de casi cuatro toneladas de CO2 al año. Sin embargo, en países como
+								Estados Unidos, esta cifra se cuadruplica por persona y año. Esto pone de manifiesto la
+								necesidad de abordar la huella de carbono personal de manera efectiva.</p>
+						</div>
+					</div>
+					<div class="col-lg-6" style="margin-top: 10px;">
+						<div class="course-body" style="margin-top: 10px;">
+							<h3 class="c-title" style="text-align: center;"><strong>Huella de Carbono de las
+									Empresas</strong></h3>
+							<p class="contenidotitle estadisticas" style="text-align: justify; margin-top: 10px;">Las
+								empresas también desempeñan un papel significativo en la generación de emisiones de GEI.
+								Estas emisiones pueden ocurrir durante la fabricación de productos, el transporte, el
+								consumo energético y otras actividades comerciales. Las empresas tienen la
+								responsabilidad de reducir su huella de carbono y contribuir a la sostenibilidad del
+								medio ambiente. Esto se puede lograr mejorando la eficiencia energética, consumiendo
+								energía de origen 100 % renovable, realizando campañas de sensibilización, invirtiendo
+								en proyectos medioambientales y apoyando políticas ambientales. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="courses archive section cardcauses">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/1.webp" alt="Contador de Electricidad" style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Consumo de Energía</h4>
+							<p style="text-align: justify;">La quema de combustibles fósiles para la electricidad y
+								calefacción libera CO2 a la atmósfera. Opta por electrodomésticos eficientes en energía,
+								usa fuentes de energía renovable y conserva la energía siempre que sea posible.</p>
+						</div>
+					</div>
+					<!--/ End Single Course -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/3.webp"
+								alt="Carros en Autopista Representando Emisiones de CO2 por Medios de Transporte"
+								style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Transporte</a></h4>
+							<p style="text-align: justify;">Los automóviles, aviones y otros medios de transporte emiten
+								CO2. Considera compartir el auto, utilizar el transporte público o elegir alternativas
+								más ecológicas como caminar o andar en bicicleta.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/8.webp" alt="Alimentos y Emisiones de Carbono"
+								style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Elección de Alimentos</a></h4>
+							<p style="text-align: justify;">La producción y el transporte de ciertos alimentos
+								contribuyen a las emisiones de carbono. Reduce tu consumo de alimentos de alto impacto,
+								apoya lo local y elige opciones basadas en plantas.</p>
+							<br>
+						</div>
+					</div>
+					<!--/ End Single Course -->
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/5.webp" alt="Gestión de Residuos y Recogida de Basura"
+								style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Gestión de Residuos</a></h4>
+							<p style="text-align: justify;">Una disposición inadecuada de los residuos conduce a
+								emisiones de metano, un potente gas de efecto invernadero. Practica el reciclaje, el
+								compostaje y la reducción de residuos para minimizar tu huella de carbono.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/6.webp" alt="Emisiones de Carbono en Viajes en Avión"
+								style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Viajes</a></h4>
+							<p style="text-align: justify;">Los vuelos en avión, especialmente los vuelos de larga
+								distancia, emiten mucho CO2. Opta por trenes o compensa emisiones apoyando proyectos de
+								carbono.</p>
+							<br>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Course -->
+					<div class="single-course">
+						<div class="course-head overlay">
+							<img src="images/courses/7.webp" alt="Deforestación y Emisiones de Carbono"
+								style="border-radius: 5px;">
+						</div>
+						<div class="course-body">
+							<h4 class="c-title" style="margin-top: 10px;">Deforestación</a></h4>
+							<p style="text-align: justify;">La destrucción de los bosques libera carbono almacenado en
+								la atmósfera. Apoya iniciativas que promuevan la reforestación y la conservación de los
+								hábitats naturales.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Courses -->
+
+	<!-- Call To Action -->
+	<section class="cta">
+		<div class="cta-inner overlay section" style="background-image:url('images/courses/cta-bg2.webp')"
+			data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-12">
+						<div class="text-content">
+							<h2>Promoviendo <span> Acciones </span>Sostenibles</h2>
+							<p style="text-align: justify;">En el mundo actual, es crucial centrarse en reducir nuestra
+								huella de carbono para proteger el medio ambiente. En CarbonZero, estamos comprometidos
+								en promover la sostenibilidad y potenciar a individuos y empresas para generar un
+								impacto positivo. Nuestro objetivo es inspirar y educar, animando a todos a tomar
+								medidas hacia un futuro más verde.</p>
+							<!-- CTA Button -->
+							<div class="button">
+								<a class="btn white" href="recursos.html">Recursos</a>
+
+								<a class="btn white primary" href="calculadora_empresa.html">calculadora</a>
+							</div>
+							<!--/ End CTA Button -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="events section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="section-title bg">
+						<h2>Reduciendo <span>Emisiones de CO2.</span></h2>
+						<p>Un paso hacia un futuro sostenible</p>
+						<div class="icon"><i class="fa fa-paper-plane"></i></div>
+					</div>
+				</div>
+				<div class="course-body">
+					<p class="contenidotitle medidas" style="text-align: justify;">Es hora de tomar medidas y reducir
+						nuestra huella de carbono para un futuro sostenible.
+						El CO2 se libera a la atmósfera principalmente a través de la quema de combustibles fósiles como
+						el carbón, el petróleo y el gas para la electricidad, el transporte y la calefacción. Estas
+						emisiones atrapan el calor en la atmósfera de la Tierra, lo que provoca el calentamiento global
+						y desafíos relacionados con el clima.</p>
+					<br>
+					<p class="medidas" style="text-align: justify;">Reducir las emisiones de CO2 es crucial para mitigar
+						los impactos del cambio climático. Aquí tienes algunos pasos sencillos pero efectivos que puedes
+						tomar:</p>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-lg-6 col-12">
+					<div class="coming-event">
+						<div class="single-event">
+							<div class="event-date">
+								<p>1<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Conservar Energía</h3>
+								<p>Utiliza electrodomésticos de bajo consumo energético, apaga las luces y los
+									dispositivos electrónicos cuando no los estés utilizando, y opta por fuentes de
+									energía renovable como la solar o eólica.</p>
+							</div>
+						</div>
+
+						<div class="single-event">
+							<div class="event-date">
+								<p>2<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Ahorra Agua</h3>
+								<p>Conserva el agua para reducir el consumo energético en su tratamiento y distribución.
+									Repara fugas, toma duchas más cortas y utiliza electrodomésticos que ahorren agua.
+								</p>
+							</div>
+						</div>
+
+						<div class="single-event">
+							<div class="event-date">
+								<p>3<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Apoya la Energía Renovable</h3>
+								<p>Aboga por políticas de energía renovable y apoya a las empresas que priorizan fuentes
+									de energía limpia.</p>
+							</div>
+						</div>
+
+						<div class="single-event">
+							<div class="event-date">
+								<p>4<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Elección de Alimentos Sostenibles</h3>
+								<p>Apoya opciones de alimentos locales, orgánicos y de temporada. Considera reducir tu
+									consumo de alimentos con una huella de carbono alta, como la carne, y opta por
+									alternativas basadas en plantas.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-12">
+					<div class="coming-event">
+						<!-- Single Event -->
+						<div class="single-event">
+							<div class="event-date">
+								<p>5<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Elige Transporte Sostenible</h3>
+								<p>Camina, usa la bicicleta o utiliza el transporte público siempre que sea posible. Si
+									necesitas conducir, considera compartir el auto o utilizar vehículos eléctricos.</p>
+							</div>
+						</div>
+						<!-- End Single Event -->
+						<!-- Single Event -->
+						<div class="single-event">
+							<div class="event-date">
+								<p>6<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Practica el Reciclaje y la Reducción de Residuos</h3>
+								<p>Reduce, reutiliza y recicla para minimizar los residuos que van a los vertederos.
+									Esto ayuda a conservar la energía utilizada en la producción y reduce las emisiones
+									de gases de efecto invernadero.</p>
+							</div>
+						</div>
+						<!-- End Single Event -->
+						<!-- Single Event -->
+						<div class="single-event">
+							<div class="event-date">
+								<p>7<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Planta Árboles</h3>
+								<p>Los árboles absorben CO2 y liberan oxígeno, lo que los convierte en valiosos aliados
+									en la lucha contra el cambio climático. Participa en iniciativas de plantación de
+									árboles y apoya los esfuerzos de reforestación.</p>
+							</div>
+						</div>
+
+						<div class="single-event">
+							<div class="event-date">
+								<p>8<span>Paso</span></p>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Educa a los demás</h3>
+								<p>Genera conciencia sobre la importancia de reducir las emisiones de CO2 e inspira a
+									otros a tomar medidas.</p>
+							</div>
+						</div>
+						<!-- End Single Event -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Events -->
+
+	<!-- Call To Action -->
+	<section class="cta">
+		<div class="cta-inner overlay section" style="background-image:url('images/courses/cta-bg4.webp')"
+			data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-12">
+						<div class="text-content">
+							<h2>Sé el Cambio: Inspira un Futuro más Verde</h2>
+							<p style="text-align: justify;">Abrazar la sostenibilidad es la clave para generar un
+								impacto duradero en nuestro planeta. Al adoptar prácticas respetuosas con el medio
+								ambiente en nuestra vida diaria, como reducir los residuos, conservar energía y elegir
+								productos sostenibles, podemos ser el cambio que nuestro mundo necesita. Pequeñas
+								acciones pueden tener un gran impacto cuando se multiplican por millones. Juntos,
+								podemos marcar la diferencia y crear un mundo más verde y saludable para las
+								generaciones futuras.</p>
+							<!-- CTA Button -->
+							<!-- 			<div class="button">
+									<a class="btn white" href="contact.html">Join With Now</a>
+									<a class="btn white primary" href="courses.html">View Courses</a>
+								</div> -->
+							<!--/ End CTA Button -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Call To Action -->
+	<!-- Faqs -->
+	<section class="faqs section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="section-title bg">
+						<h2>¿Cómo calcular nuestra huella de Carbono?</h2>
+						<div class="icon"><i class="fa fa-question"></i></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="course-body" style="text-align: justify;">
+						<p class="contenidotitle">La huella de carbono se calcula usando datos sobre tus actividades
+							diarias, como la electricidad que consumes, tus hábitos de viaje y tu elección de alimentos.
+							Cada actividad se evalúa utilizando factores de emisión que representan la cantidad de gases
+							de efecto invernadero (GEI) generados. Los cálculos se basan en estándares internacionales,
+							como el Protocolo de Gases de Efecto Invernadero (GHG). Esta herramienta aplicará fórmulas
+							basadas en datos científicos y estadísticas para estimar tus emisiones de GEI y te
+							proporcionará una cifra estimada de tu huella de carbono.</p><br>
+						<a href="calculadora_personal.html">Calcular Huella de Carbono Personal</a><br>
+						<a href="calculadora_empresa.html">Calcular Huella de Carbono Empresarial</a><br>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="course-body" style="margin-top: 30px; text-align: justify;">
+						<h3 class="c-title"><strong>1. Recopilación de Datos.</strong></h3>
+						<p class="contenidotitle">La calculadora recopila información detallada sobre tus actividades
+							diarias. Esto puede incluir tu consumo de energía en casa, tu patrón de viaje, tu elección
+							de alimentos, entre otros. Cuantos más detalles proporciones, más precisa será la
+							estimación.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="course-body" style="margin-top: 30px; text-align: justify;">
+						<h3 class="c-title"><strong>2. Datos de Actividad.</strong></h3>
+						<p class="contenidotitle">Cada actividad que realizas se traduce en un "dato de actividad". Este
+							dato define el nivel de actividad que genera emisiones de GEI. Por ejemplo, el uso de
+							electricidad en tu hogar, la distancia que recorres en tu automóvil o la cantidad de carne
+							que consumes tienen datos de actividad asociados.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="course-body" style="margin-top: 30px; text-align: justify;">
+						<h3 class="c-title"><strong>3. Factores de Emisión.</strong></h3>
+						<p class="contenidotitle">A cada dato de actividad se le asigna un "factor de emisión". Este
+							factor representa la cantidad de GEI que se emiten por cada unidad de actividad. Estos
+							factores se basan en datos científicos y estadísticas confiables. Por ejemplo, el factor de
+							emisión para la electricidad dependerá de cómo se genera la electricidad en tu región, ya
+							sea mediante fuentes renovables o combustibles fósiles.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="course-body" style="margin-top: 30px; text-align: justify;">
+						<h3 class="c-title"><strong>4. Cálculo y Suma Total.</strong></h3>
+						<p class="contenidotitle">La calculadora toma tus actividades diarias, como electricidad y
+							viajes, y multiplica cada una por un número que representa su impacto en las emisiones de
+							carbono. Luego, suma estos números para obtener tu huella de carbono total, que muestra
+							cuánto contribuyes al cambio climático. La calculadora te mostrará el resultado,
+							generalmente en kilogramos de CO2 equivalente (CO2e) o en otras unidades.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--/ End Blogs -->
+
+	<!-- Call To Action -->
+	<section class="cta">
+		<div class="cta-inner overlay section" style="background-image:url('images/courses/cta-bg5.webp')"
+			data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-12">
+						<div class="text-content">
+							<h2>Tu Contribución al Futuro</h2>
+							<p style="text-align: justify;">Cada pequeña acción cuenta. Al usar la calculadora de huella
+								de carbono, puedes evaluar tus elecciones diarias y ver cómo afectan al medio ambiente.
+								Así, estarás mejor equipado para reducir tu impacto. ¿Por qué es importante? Porque las
+								emisiones de carbono son la principal causa del cambio climático y el calentamiento
+								global. Al reducir nuestra huella, estamos ayudando a ralentizar estos desafíos
+								ambientales y a preservar el planeta para las futuras generaciones.</p>
+							<!-- CTA Button -->
+							<!-- 			<div class="button">
+									<a class="btn white" href="contact.html">Join With Now</a>
+									<a class="btn white primary" href="courses.html">View Courses</a>
+								</div> -->
+							<!--/ End CTA Button -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Call To Action -->
+	<section class="faqs section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-12">
+					<div class="section-title bg">
+						<h2>Preguntas Frecuentes</h2>
+						<div class="icon"><i class="fa fa-question"></i></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-12">
+					<div class="faq-image">
+						<img src="images/courses/faq1.png" alt="#">
+					</div>
+				</div>
+				<div class="col-lg-7 col-12">
+					<div class="faq-main">
+						<div class="faq-content">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<!-- Single Faq -->
+								<div class="panel panel-default">
+									<div class="faq-heading" id="FaqTitle1">
+										<h4 class="faq-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#faq1">
+												<i class="fa fa-question"></i>¿Cómo me beneficiará a mí o a mi empresa
+												la calculadora de la huella de carbono?
+											</a>
+										</h4>
+									</div>
+									<div id="faq1" class="panel-collapse collapse" role="tabpanel"
+										aria-labelledby="FaqTitle1">
+										<div class="faq-body" style="text-align: justify;">
+											La calculadora de la huella de carbono es una herramienta útil tanto para
+											individuos como para empresas. Ayuda a medir el impacto ambiental de
+											nuestras actividades y operaciones, mostrándonos dónde generamos la mayoría
+											de las emisiones de carbono. Para las personas, crea conciencia sobre
+											nuestros hábitos y nos ayuda a tomar decisiones más sostenibles. Para las
+											empresas, les permite evaluar su impacto, identificar áreas de mejora e
+											implementar estrategias para reducir las emisiones. En última instancia, la
+											calculadora nos ayuda a contribuir a un futuro más verde y a mejorar nuestro
+											desempeño ambiental.
+										</div>
+									</div>
+								</div>
+
+								<!--/ End Single Faq -->
+								<!-- Single Faq -->
+								<div class="panel panel-default active">
+									<div class="faq-heading" id="FaqTitle2">
+										<h4 class="faq-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#faq2"><i class="fa fa-question"></i>¿Qué significa "ser el
+												cambio" en términos de sostenibilidad?</a>
+										</h4>
+									</div>
+									<div id="faq2" class="panel-collapse collapse show" role="tabpanel"
+										aria-labelledby="FaqTitle2">
+										<div class="faq-body" style="text-align: justify;">"Ser el cambio" se refiere a
+											tomar acciones individuales y tomar decisiones que promuevan un estilo de
+											vida sostenible y la responsabilidad ambiental. Implica adoptar prácticas
+											como la reducción de residuos, la conservación de energía y el apoyo a
+											productos e iniciativas sostenibles.</div>
+									</div>
+								</div>
+
+								<!--/ End Single Faq -->
+								<!-- Single Faq -->
+								<!-- Pregunta 3 -->
+								<div class="panel panel-default">
+									<div class="faq-heading" id="FaqTitle3">
+										<h4 class="faq-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#faq3"><i class="fa fa-question"></i>¿Cómo puedo generar un
+												impacto sostenible en mi vida diaria?</a>
+										</h4>
+									</div>
+									<div id="faq3" class="panel-collapse collapse" role="tabpanel"
+										aria-labelledby="FaqTitle3">
+										<div class="faq-body" style="text-align: justify;">Puedes generar un impacto
+											sostenible implementando pequeños cambios en tu rutina diaria. Algunos
+											ejemplos incluyen reciclar, utilizar electrodomésticos eficientes en
+											energía, reducir el consumo de agua, optar por el transporte público o
+											compartir automóvil y apoyar a negocios locales y sostenibles.</div>
+									</div>
+								</div>
+								<!--/ Fin de la Pregunta 3 -->
+
+								<!-- Pregunta 4 -->
+								<div class="panel panel-default">
+									<div class="faq-heading" id="FaqTitle4">
+										<h4 class="faq-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#faq4"><i class="fa fa-question"></i>¿Por qué es importante
+												adoptar la sostenibilidad?</a>
+										</h4>
+									</div>
+									<div id="faq4" class="panel-collapse collapse" role="tabpanel"
+										aria-labelledby="FaqTitle4">
+										<div class="faq-body" style="text-align: justify;">Adoptar la sostenibilidad es
+											fundamental porque contribuye a proteger el medio ambiente, conservar los
+											recursos naturales, reducir la contaminación y combatir el cambio climático.
+											Al vivir de manera sostenible, aseguramos un futuro mejor para nosotros y
+											las generaciones futuras, preservando la biodiversidad del planeta y su
+											bienestar en general.</div>
+									</div>
+								</div>
+								<!--/ Fin de la Pregunta 4 -->
+
+								<!-- Pregunta 5 -->
+								<div class="panel panel-default">
+									<div class="faq-heading" id="FaqTitle5">
+										<h4 class="faq-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#faq5"><i class="fa fa-question"></i>¿Cómo puedo inspirar a otros
+												a unirse al movimiento de sostenibilidad?</a>
+										</h4>
+									</div>
+									<div id="faq5" class="panel-collapse collapse" role="tabpanel"
+										aria-labelledby="FaqTitle5">
+										<div class="faq-body" style="text-align: justify;">Puedes inspirar a otros
+											liderando con el ejemplo y compartiendo tus prácticas y experiencias
+											sostenibles. Participa en conversaciones sobre sostenibilidad, únete a
+											iniciativas comunitarias y crea conciencia a través de las redes sociales o
+											eventos locales. Alentar a otros a hacer pequeños cambios y mostrarles el
+											impacto positivo que pueden tener los motivará a unirse al movimiento de
+											sostenibilidad.</div>
+									</div>
+								</div>
+								<!--/ Fin de la Pregunta 5 -->
+
+								<!--/ End Single Faq -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer section">
+		<!-- Footer Top -->
+		<div class="footer-top overlay copyabout">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<!-- About -->
+						<div class="single-widget about">
+							<h2>Acerca de CarbonZero</h2>
+							<ul class="list">
+								<!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
+								<li><i class="fa fa-envelope"></i>Correo: <a>tristardevelopsf@gmail.com</a></li>
+								<li><i class="fa fa-map-o"></i>Dirección: Panamá, Panamá City</li>
+							</ul>
+							<!-- Social -->
+							<ul class="social">
+								<li class="active"><a href="https://www.instagram.com/tristardevelops/"
+										target="_blank"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+							<!-- End Social -->
+						</div>
+						<!--/ End About -->
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-12">
+						<div class="single-widget list">
+							<h2>Páginas</h2>
+							<ul>
+								<li><i class="fa fa-angle-right"></i><a href="#">Inicio</a></li>
+								<li><i class="fa fa-angle-right"></i><a href="personas.html">Personas</a></li>
+								<li><i class="fa fa-angle-right"></i><a href="recursos.html">Recursos</a></li>
+								<li><i class="fa fa-angle-right"></i><a href="nosotros.html">Sobre Nosotros</a></li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-12">
+						<div class="single-widget list">
+							<h2>Calculadoras Ambientales</h2>
+							<ul>
+								<li><i class="fa fa-angle-right"></i><a href="calculadora_personal.html">Personal</a>
+								</li>
+								<li><i class="fa fa-angle-right"></i><a href="calculadora_empresa.html">Empresarial</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--/ End Footer Top -->
+
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Copyright -->
+						<div class="copyright">
+							<p>© Copyright CarbonZero 2023. Diseño y Desarrollo por <a
+									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
+									Develops</a></p>
+						</div>
+						<!--/ End Copyright -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Footer Bottom -->
+	</footer>
+	<!--/ End Footer -->
+
+	<!-- Jquery JS-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+	<!-- Colors JS-->
+	<script src="js/colors.js"></script>
+	<!-- Popper JS-->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS-->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel JS-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Jquery Steller JS -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Final Countdown JS -->
+	<script src="js/finalcountdown.min.js"></script>
+	<!-- Fancy Box JS-->
+	<script src="js/facnybox.min.js"></script>
+	<!-- Magnific Popup JS-->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Circle Progress JS -->
+	<script src="js/circle-progress.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="js/niceselect.js"></script>
+	<!-- Jquery Steller JS-->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Jquery Steller JS-->
+	<script src="js/cube-portfolio.min.js"></script>
+	<!-- Slick Nav JS-->
+	<script src="js/slicknav.min.js"></script>
+	<!-- Easing JS-->
+	<script src="js/easing.min.js"></script>
+	<!-- Waypoints JS-->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Counter Up JS -->
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- Scroll Up JS-->
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<!-- Gmaps JS-->
+	<script src="js/gmaps.min.js"></script>
+	<!-- Main JS-->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
