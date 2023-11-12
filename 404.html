@@ -5,12 +5,27 @@
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- Viewport for responsive web design -->
+	<!-- Viewport for responsive web design -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<title>Error 404 - Página no encontrada</title>
-	
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Canonical URL-->
+	<link rel="canonical" href="https://carbonzero.lat/">
+
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<!-- Preload de Imágenes de la pagina empresa -->
+	<img src="images/courses/personas3.webp" alt="personas" style="display: none;">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,16 +45,19 @@
 	<link rel="stylesheet" href="css/slicknav.min.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!--  Stylesheet -->
+
+	<!-- Eduland Stylesheet -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<!-- Colors -->
-	<link rel="stylesheet" href="css/colors/color1.css">
 
+	<!-- Eduland Colors -->
+	<link rel="stylesheet" href="css/colors/color1.css">
 </head>
+
 <body>
-    <header class="header">
+	<!-- Header -->
+	<header class="header">
 		<!-- Header Inner -->
 		<div class="header-inner overlay">
 			<div class="container">
@@ -49,6 +67,7 @@
 						<div class="logo">
 							<a href="index.html"><img src="images/courses/logo3.png"
 									style="height: 60px; margin-top: -17px;" alt="CarbonZero Logo">CarbonZero</a>
+							<!-- <a href="index.html"><img src="images/courses/logo3.png" style="height: 60px; margin-top: -17px;"  alt="CarbonZero Logo">CarbonZero</a> -->
 						</div>
 						<!--/ End Logo -->
 
@@ -60,9 +79,9 @@
 								<div class="navbar-collapse">
 									<!-- Main Menu -->
 									<ul id="nav" class="nav menu navbar-nav">
-										<li class="active"><a href="index.html"><i class="fa fa-home"></i>Inicio</a>
-										</li>
-										<li><a href="personas.html"><i class="fa fa-clone"></i>Personas</a></li>
+										<li><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
+										<li class="active"><a href="personas.html"><i
+													class="fa fa-clone"></i>Personas</a></li>
 										<li><a href="#"><i class="fa fa-clone"></i>Calculadora</a>
 											<ul class="dropdown">
 												<li><a href="calculadora_personal.html">Personal</a></li>
@@ -83,22 +102,66 @@
 		<!--/ End Header Inner -->
 	</header>
 	<!--/ End Header -->
-    
-    <div class="d-flex align-items-center justify-content-center vh-100 my-5">
-        <div class="text-center row">
-            <div class="col-md-6">
-                <img src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569__340.jpg" alt=""
-                    class="img-fluid">
-            </div>
-            <div class=" col-md-6 mt-5">
-                <p class="fs-3"> <span class="text-danger">Opps!</span> Página no encontrada.</p>
-                <p class="lead my-5">
-                    La página que estás buscando no existe.
-                </p>
-                <a href="index.html" class="btn btn-primary">Volver a Inicio</a>
-            </div>
 
-        </div>
-    </div>
+	<div class="d-flex align-items-center justify-content-center vh-100 my-5">
+		<div class="text-center row">
+			<div class="col-md-6">
+				<img src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569__340.jpg" alt=""
+					class="img-fluid">
+			</div>
+			<div class=" col-md-6 mt-5">
+				<p class="fs-3"> <span class="text-danger">Opps!</span> Página no encontrada.</p>
+				<p class="lead my-5">
+					La página que estás buscando no existe.
+				</p>
+				<a href="index.html" class="btn btn-primary">Volver a Inicio</a>
+			</div>
+
+		</div>
+	</div>
+
+		<!--/ End Footer -->
+		<!-- Jquery JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate.min.js"></script>
+		<!-- Colors JS-->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS-->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap JS-->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Owl Carousel JS-->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Jquery Steller JS -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Final Countdown JS -->
+		<script src="js/finalcountdown.min.js"></script>
+		<!-- Fancy Box JS-->
+		<script src="js/facnybox.min.js"></script>
+		<!-- Magnific Popup JS-->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Circle Progress JS -->
+		<script src="js/circle-progress.min.js"></script>
+		<!-- Nice Select JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Jquery Steller JS-->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Jquery Steller JS-->
+		<script src="js/cube-portfolio.min.js"></script>
+		<!-- Slick Nav JS-->
+		<script src="js/slicknav.min.js"></script>
+		<!-- Easing JS-->
+		<script src="js/easing.min.js"></script>
+		<!-- Waypoints JS-->
+		<script src="js/waypoints.min.js"></script>
+		<!-- Counter Up JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Scroll Up JS-->
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Gmaps JS-->
+		<script src="js/gmaps.min.js"></script>
+		<!-- Main JS-->
+		<script src="js/main.js"></script>
 </body>
+
 </html>
