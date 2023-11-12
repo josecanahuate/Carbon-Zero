@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /nosotros.html
+Disallow: /404.html
 
