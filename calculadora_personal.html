@@ -17,6 +17,7 @@
 	<meta name="keywords"
 		content="huella de carbono personal, calcular huella de carbono, reducción de emisiones, sostenibilidad, impacto ambiental, huella ecológica, calculadora ambiental">
 	<meta name="author" content="Tristar Develops - CarbonZero">
+	<meta name="theme-color" content="#28a745"/>
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -105,12 +106,19 @@
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTJKBM37SJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-QTJKBM37SJ');
+</script>
 <body>
 	<style>
 		a {
 			text-decoration: none;
-			/* Esto quita el subrayado de todos los enlaces */
 		}
 	</style>
 	<!-- Header -->
@@ -124,7 +132,6 @@
 						<div class="logo">
 							<a href="index.html"><img src="images/courses/logo3.png"
 									style="height: 60px; margin-top: -17px;" alt="CarbonZero Logo">CarbonZero</a>
-							<!-- <a href="index.html"><img src="images/courses/logo3.png" style="height: 60px; margin-top: -17px;"  alt="CarbonZero Logo">CarbonZero</a> -->
 						</div>
 						<!--/ End Logo -->
 
@@ -177,7 +184,8 @@
 	</div>
 	<!--/ End Breadcrumb -->
 
-	<!-- Teachers -->
+
+	<!-- Calculadora Personal -->
 	<section class="teachers archive sectioncompany">
 		<div class="container">
 			<div class="row">
@@ -188,7 +196,20 @@
 						<div class="icon"><i class="fa fa-calculator"></i></div>
 					</div>
 				</div>
-				<!-- <body class="bg-dark"> -->
+
+				<!--Anuncio de Google AdSense -->
+				<!-- Inicio del anuncio de Google AdSense -->
+				<div style="text-align: center; margin: 20px 0;">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Tamaño y formato del anuncio -->
+					<ins class="adsbygoogle" style="display:block" data-ad-client="tu-id-de-cliente"
+						data-ad-slot="tu-slot-de-anuncio" data-ad-format="auto"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+				<!-- Fin del anuncio de Google AdSense -->
+
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 mx-auto" style="margin-bottom: 150px; margin-top: 30px;">
@@ -552,8 +573,7 @@
 													<!-- txt * 0.002467; -->
 												</div>
 												<div class="col">
-													<input type="text" class="form-control" id="diesel"
-													>
+													<input type="text" class="form-control" id="diesel">
 												</div>
 											</div>
 										</div>
@@ -566,8 +586,7 @@
 													<!-- txt * 0.000182; -->
 												</div>
 												<div class="col">
-													<input type="text" class="form-control" id="gasnatural"
-													>
+													<input type="text" class="form-control" id="gasnatural">
 												</div>
 											</div>
 										</div>
@@ -633,8 +652,7 @@
 														<!-- txt * 4 kg CO2/viaje -->
 													</div>
 													<div class="col">
-														<input type="text" class="form-control" id="bus"
-														>
+														<input type="text" class="form-control" id="bus">
 													</div>
 												</div>
 											</div>
@@ -648,8 +666,7 @@
 														<!-- txt * 10 kg CO2/viaje -->
 													</div>
 													<div class="col">
-														<input type="text" class="form-control" id="taxi"
-														>
+														<input type="text" class="form-control" id="taxi">
 													</div>
 												</div>
 											</div>
@@ -945,11 +962,24 @@
 				const prevButtonStep6 = document.querySelector('.step-6 .prev-step');
 				prevButtonStep6.addEventListener('click', handlePreviousStep);
 
-				// Show the first step initially
-				showStep(currentStep);
+				/* // Show the first step initially
+				showStep(currentStep); */
 			</script>
 		</div><!--/ End Container -->
 	</section>
+
+	<!--Anuncio de Google AdSense -->
+	<!-- Inicio del anuncio de Google AdSense -->
+	<div style="text-align: center; margin: 20px 0;">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Tamaño y formato del anuncio -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="tu-id-de-cliente"
+			data-ad-slot="tu-slot-de-anuncio" data-ad-format="auto"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<!-- Fin del anuncio de Google AdSense -->
 
 	<!-- Footer -->
 	<footer class="footer section ">
@@ -962,7 +992,6 @@
 						<div class="single-widget about">
 							<h2>Acerca de CarbonZero</h2>
 							<ul class="list">
-								<!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
 								<li><i class="fa fa-envelope"></i>Correo: <a>tristardevelopsf@gmail.com</a></li>
 								<li><i class="fa fa-map-o"></i>Dirección: Panamá, Panamá City</li>
 							</ul>

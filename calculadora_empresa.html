@@ -11,10 +11,10 @@
 	<meta name="description"
 		content="Calculadora de Huella de Carbono Empresarial: Mide, Reduce y Protege el Medio Ambiente. Cuantifica el Impacto Ambiental de tu Empresa con Nuestra Calculadora Gratis.">
 	<meta name='copyright' content='© 2023 CarbonZero. Todos los derechos reservados.'>
-	<!-- Viewport for responsive web design -->
 	<meta name="keywords"
 		content="huella de carbono empresarial, calcular huella de carbono, reducción de emisiones, sostenibilidad empresarial, impacto ambiental corporativo, huella ecológica de empresas, calculadora ambiental empresarial">
 	<meta name="author" content="Tristar Develops - CarbonZero">
+	<meta name="theme-color" content="#28a745"/>
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -31,14 +31,15 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis.">
-	
+	<meta name="description"
+		content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis.">
+
 	<!-- Meta Tags MICROSOFT TILES-->
 	<meta name="msapplication-TileImage" content="microsofttiles.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-navbutton-color" content="#ffffff">
 	<meta name="msapplication-starturl" content="/index.html">
-	
+
 	<!-- Canonical URL-->
 	<link rel="canonical" href="https://carbonzero.lat/">
 
@@ -102,7 +103,15 @@
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTJKBM37SJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-QTJKBM37SJ');
+</script>
 <body>
 	<!-- Header -->
 	<header class="header">
@@ -180,231 +189,259 @@
 					</div>
 				</div>
 
-					<div class="container">
-						<div class="row">
-							<div class="col-md-5" style="margin-bottom: 150px; margin-top: 30px;">
-								<form id="loan-form">
-									<div class="alert alert-warning alert-dismissible fade show" role="alert">
-										<strong>Campos no aplicables, déjarlos en blanco.</strong>
-										<button type="button" class="btn-close" data-bs-dismiss="alert"
-											aria-label="Close"></button>
-									</div>
+				<!--Anuncio de Google AdSense -->
+				<!-- Inicio del anuncio de Google AdSense -->
+				<div style="text-align: center; margin: 20px 0;">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Tamaño y formato del anuncio -->
+					<ins class="adsbygoogle" style="display:block" data-ad-client="tu-id-de-cliente"
+						data-ad-slot="tu-slot-de-anuncio" data-ad-format="auto"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+				<!-- Fin del anuncio de Google AdSense -->
 
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon dollar"
-												style="background-color: #05C46B;">$</span>
-											<input type="number" class="form-control" id="gasolina_expenses"
-												placeholder="¿Gastos mensuales en Gasolina de tu empresa?">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon dollar"
-												style="background-color: #05C46B;">$</span>
-											<input type="number" class="form-control" id="diesel_expenses"
-												placeholder="¿Gastos mensuales en Gasoil (diesel) de tu empresa?">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon dollar"
-												style="background-color: #05C46B;">$</span>
-											<input type="number" class="form-control" id="gasnatural_expenses"
-												placeholder="¿Gastos mensuales en Gas natural de tu empresa?">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon dollar electricidad"
-												style="background-color: #05C46B;">$</span>
-											<input type="number" class="form-control" id="electricity_expenses"
-												placeholder="¿Gastos mensuales en electricidad de tu empresa?">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<input type="submit" value="Calcular"
-											style="background-color: #05C46B; margin-top: 20px; height: 3rem; font-size:x-large;"
-											class="btn btn-dark btn-block">
-									</div>
-								</form>
-							</div> <!-- END COLUMN	 -->
-
-							<!-- LOADER -->
-							<div class="col-md-2">
-								<div id="loading" class="gif">
-									<img src="images/courses/empresa.gif" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5" style="margin-bottom: 150px; margin-top: 30px;">
+							<form id="loan-form">
+								<div class="alert alert-warning alert-dismissible fade show" role="alert">
+									<strong>Campos no aplicables, déjarlos en blanco.</strong>
+									<button type="button" class="btn-close" data-bs-dismiss="alert"
+										aria-label="Close"></button>
 								</div>
+
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon dollar"
+											style="background-color: #05C46B;">$</span>
+										<input type="number" class="form-control" id="gasolina_expenses"
+											placeholder="¿Gastos mensuales en Gasolina de tu empresa?">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon dollar"
+											style="background-color: #05C46B;">$</span>
+										<input type="number" class="form-control" id="diesel_expenses"
+											placeholder="¿Gastos mensuales en Gasoil (diesel) de tu empresa?">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon dollar"
+											style="background-color: #05C46B;">$</span>
+										<input type="number" class="form-control" id="gasnatural_expenses"
+											placeholder="¿Gastos mensuales en Gas natural de tu empresa?">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon dollar electricidad"
+											style="background-color: #05C46B;">$</span>
+										<input type="number" class="form-control" id="electricity_expenses"
+											placeholder="¿Gastos mensuales en electricidad de tu empresa?">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="submit" value="Calcular"
+										style="background-color: #05C46B; margin-top: 20px; height: 3rem; font-size:x-large;"
+										class="btn btn-dark btn-block">
+								</div>
+							</form>
+						</div> <!-- END COLUMN	 -->
+
+						<!-- LOADER -->
+						<div class="col-md-2">
+							<div id="loading" class="gif">
+								<img src="images/courses/empresa.gif" alt="">
 							</div>
+						</div>
 
-							<!-- Columna de 6 para los resultados -->
-							<div class="col-md-5 huellaempresa">
-								<div id="results" class="pt-4" style="margin-top: 5px;">
-									<h5 class="mb-4" style="text-align: center;">HUELLA DE CARBONO ESTIMADA EMITIDA POR
-										TU EMPRESA</h5>
+						<!-- Columna de 6 para los resultados -->
+						<div class="col-md-5 huellaempresa">
+							<div id="results" class="pt-4" style="margin-top: 5px;">
+								<h5 class="mb-4" style="text-align: center;">HUELLA DE CARBONO ESTIMADA EMITIDA POR
+									TU EMPRESA</h5>
 
-									<div class="form-group gastosmensuales">
-										<div class="result-item">
-											<label>Huella de Carbono Mensual</label>
-											<p id="monthly-payment" class="result-value"></p>
-										</div>
+								<div class="form-group gastosmensuales">
+									<div class="result-item">
+										<label>Huella de Carbono Mensual</label>
+										<p id="monthly-payment" class="result-value"></p>
 									</div>
-
-									<div class="form-group gastostotales">
-										<div class="result-item">
-											<label>Gastos Mensuales Totales</label>
-											<p id="total-payment" class="result-value"></p>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div id="huella-carbono-value"></div>
-									</div>
-
-									<div class="form-group">
-										<div class="progress" style="height: 2rem">
-											<div id="progress-bar" class="progress-bar" role="progressbar"
-												style="width: 0;"></div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="result-item">
-											<p id="message" class="result-value"></p>
-										</div>
-									</div>
-
 								</div>
+
+								<div class="form-group gastostotales">
+									<div class="result-item">
+										<label>Gastos Mensuales Totales</label>
+										<p id="total-payment" class="result-value"></p>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div id="huella-carbono-value"></div>
+								</div>
+
+								<div class="form-group">
+									<div class="progress" style="height: 2rem">
+										<div id="progress-bar" class="progress-bar" role="progressbar"
+											style="width: 0;"></div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="result-item">
+										<p id="message" class="result-value"></p>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<script>
-						// Listen for submit
-						document.getElementById('loan-form').addEventListener('submit', function (e) {
-							e.preventDefault();
+				<script>
+					// Listen for submit
+					document.getElementById('loan-form').addEventListener('submit', function (e) {
+						e.preventDefault();
 
-							// Hide results and show loader
-							document.getElementById('results').style.display = 'none';
-							document.getElementById('loading').style.display = 'block';
-
-
-							// Set TimeOut to calculate results after 3 seconds
-							setTimeout(calculateResults, 3000);
-						});
-
-						// Calculate Results
-						function calculateResults() {
-							console.log('Calculating...');
-							// UI Variables
-							const gasolinaExpenses = parseFloat(document.getElementById('gasolina_expenses').value) || 0;
-							const electricityExpenses = parseFloat(document.getElementById('electricity_expenses').value) || 0;
-							const dieselExpenses = parseFloat(document.getElementById('diesel_expenses').value) || 0;
-							const gasNaturalExpenses = parseFloat(document.getElementById('gasnatural_expenses').value) || 0;
-
-							const monthlyPayment = document.getElementById('monthly-payment');
-							const totalPayment = document.getElementById('total-payment');
-
-							// Calculations
-							const gasolinaPrincipal = gasolinaExpenses * 0.00218;
-							const electricityPrincipal = electricityExpenses * 0.000309;
-							const dieselPrincipal = dieselExpenses * 0.002467;
-							const gasnaturalPrincipal = gasNaturalExpenses * 0.000182;
-
-							// Compute Monthly Payments
-							const monthly = gasolinaPrincipal + electricityPrincipal + dieselPrincipal + gasnaturalPrincipal;
-							const total = gasolinaExpenses + electricityExpenses + dieselExpenses + gasNaturalExpenses;
-
-							if (isFinite(monthly)) {
-								monthlyPayment.textContent = `${monthly.toFixed(2)} Toneladas Métricas`;
-								totalPayment.textContent = total.toFixed(2);
-
-								// Show results and hide loader
-								document.getElementById('results').style.display = 'block';
-								document.getElementById('loading').style.display = 'none';
+						// Hide results and show loader
+						document.getElementById('results').style.display = 'none';
+						document.getElementById('loading').style.display = 'block';
 
 
-								// Update the progress bar after the values are calculated
-								updateProgressBar(monthly);
-							} else {
-								showError('Por favor, verifica tus números');
-							}
-						}
+						// Set TimeOut to calculate results after 3 seconds
+						setTimeout(calculateResults, 3000);
+					});
 
-						// Show Error
-						function showError(error) {
-							// Hide results and loader
-							document.getElementById('results').style.display = 'none';
+					// Calculate Results
+					function calculateResults() {
+						console.log('Calculating...');
+						// UI Variables
+						const gasolinaExpenses = parseFloat(document.getElementById('gasolina_expenses').value) || 0;
+						const electricityExpenses = parseFloat(document.getElementById('electricity_expenses').value) || 0;
+						const dieselExpenses = parseFloat(document.getElementById('diesel_expenses').value) || 0;
+						const gasNaturalExpenses = parseFloat(document.getElementById('gasnatural_expenses').value) || 0;
+
+						const monthlyPayment = document.getElementById('monthly-payment');
+						const totalPayment = document.getElementById('total-payment');
+
+						// Calculations
+						const gasolinaPrincipal = gasolinaExpenses * 0.00218;
+						const electricityPrincipal = electricityExpenses * 0.000309;
+						const dieselPrincipal = dieselExpenses * 0.002467;
+						const gasnaturalPrincipal = gasNaturalExpenses * 0.000182;
+
+						// Compute Monthly Payments
+						const monthly = gasolinaPrincipal + electricityPrincipal + dieselPrincipal + gasnaturalPrincipal;
+						const total = gasolinaExpenses + electricityExpenses + dieselExpenses + gasNaturalExpenses;
+
+						if (isFinite(monthly)) {
+							monthlyPayment.textContent = `${monthly.toFixed(2)} Toneladas Métricas`;
+							totalPayment.textContent = total.toFixed(2);
+
+							// Show results and hide loader
+							document.getElementById('results').style.display = 'block';
 							document.getElementById('loading').style.display = 'none';
 
 
-							// Create a div
-							const errorDiv = document.createElement('div');
-							errorDiv.className = 'alert alert-danger';
-							errorDiv.appendChild(document.createTextNode(error));
+							// Update the progress bar after the values are calculated
+							updateProgressBar(monthly);
+						} else {
+							showError('Por favor, verifica tus números');
+						}
+					}
 
-							// Insert error above heading
-							const card = document.querySelector('.card');
-							const heading = document.querySelector('.heading');
-							card.insertBefore(errorDiv, heading);
+					// Show Error
+					function showError(error) {
+						// Hide results and loader
+						document.getElementById('results').style.display = 'none';
+						document.getElementById('loading').style.display = 'none';
 
-							// Clear error after 3 seconds
-							setTimeout(() => {
-								errorDiv.remove();
-							}, 3000);
+
+						// Create a div
+						const errorDiv = document.createElement('div');
+						errorDiv.className = 'alert alert-danger';
+						errorDiv.appendChild(document.createTextNode(error));
+
+						// Insert error above heading
+						const card = document.querySelector('.card');
+						const heading = document.querySelector('.heading');
+						card.insertBefore(errorDiv, heading);
+
+						// Clear error after 3 seconds
+						setTimeout(() => {
+							errorDiv.remove();
+						}, 3000);
+					}
+
+					// Update Progress Bar
+					function updateProgressBar(monthly) {
+						const progressBar = document.getElementById('progress-bar');
+						const messageField = document.getElementById('message');
+
+						if (isNaN(monthly) || monthly <= 0) {
+							return;
 						}
 
-						// Update Progress Bar
-						function updateProgressBar(monthly) {
-							const progressBar = document.getElementById('progress-bar');
-							const messageField = document.getElementById('message');
+						let estiloProgressBar, anchoProgressBar, textoProgressBar, mensajetexto;
 
-							if (isNaN(monthly) || monthly <= 0) {
-								return;
-							}
-
-							let estiloProgressBar, anchoProgressBar, textoProgressBar, mensajetexto;
-
-							if (monthly <= 25) {
-								estiloProgressBar = 'bg-success';
-								anchoProgressBar = '25%';
-								textoProgressBar = '¡Bien!';
-								mensajetexto = "¡Felicidades! Tu empresa está haciendo un gran esfuerzo por el planeta. Tu huella de carbono es realmente baja. 🌱🌍"
-							} else if (monthly <= 50) {
-								estiloProgressBar = 'bg-info';
-								anchoProgressBar = '50%';
-								textoProgressBar = '¡Hora de actuar!';
-								mensajetexto = "¡Hora de actuar! La emisión de carbono de tu empresa es alta. ¡Juntos podemos reducirla y hacer un impacto positivo! 💪🌳"
-							} else if (monthly <= 75) {
-								estiloProgressBar = 'bg-warning';
-								anchoProgressBar = '75%';
-								textoProgressBar = '¡Atención!';
-								mensajetexto = "¡Atención! Tu empresa tiene una huella de carbono significativa. Es hora de tomar medidas y cambiar el rumbo hacia la sostenibilidad. 🚀🌿"
-							} else {
-								estiloProgressBar = 'bg-danger';
-								anchoProgressBar = '100%';
-								textoProgressBar = '¡Alerta Roja!';
-								mensajetexto = "Tu empresa tiene una huella de carbono extremadamente alta. La crisis climática está llamando a la puerta.🌎🔥💔"
-							}
-
-							progressBar.className = `progress-bar ${estiloProgressBar}`;
-							progressBar.style.width = anchoProgressBar;
-							progressBar.textContent = textoProgressBar;
-							messageField.textContent = mensajetexto;
+						if (monthly <= 25) {
+							estiloProgressBar = 'bg-success';
+							anchoProgressBar = '25%';
+							textoProgressBar = '¡Bien!';
+							mensajetexto = "¡Felicidades! Tu empresa está haciendo un gran esfuerzo por el planeta. Tu huella de carbono es realmente baja. 🌱🌍"
+						} else if (monthly <= 50) {
+							estiloProgressBar = 'bg-info';
+							anchoProgressBar = '50%';
+							textoProgressBar = '¡Hora de actuar!';
+							mensajetexto = "¡Hora de actuar! La emisión de carbono de tu empresa es alta. ¡Juntos podemos reducirla y hacer un impacto positivo! 💪🌳"
+						} else if (monthly <= 75) {
+							estiloProgressBar = 'bg-warning';
+							anchoProgressBar = '75%';
+							textoProgressBar = '¡Atención!';
+							mensajetexto = "¡Atención! Tu empresa tiene una huella de carbono significativa. Es hora de tomar medidas y cambiar el rumbo hacia la sostenibilidad. 🚀🌿"
+						} else {
+							estiloProgressBar = 'bg-danger';
+							anchoProgressBar = '100%';
+							textoProgressBar = '¡Alerta Roja!';
+							mensajetexto = "Tu empresa tiene una huella de carbono extremadamente alta. La crisis climática está llamando a la puerta.🌎🔥💔"
 						}
 
-						// Call the function to update the progress bar
-						updateProgressBar(0);
-					</script>
+						progressBar.className = `progress-bar ${estiloProgressBar}`;
+						progressBar.style.width = anchoProgressBar;
+						progressBar.textContent = textoProgressBar;
+						messageField.textContent = mensajetexto;
+					}
+
+					// Call the function to update the progress bar
+					updateProgressBar(0);
+				</script>
 
 			</div><!--/ End Row -->
 		</div><!--/ End Container -->
 	</section>
 	<!--/ End Teachers -->
+
+	
+		<!--Anuncio de Google AdSense -->
+	<!-- Inicio del anuncio de Google AdSense -->
+	<div style="text-align: center; margin: 20px 0;">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Tamaño y formato del anuncio -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="tu-id-de-cliente"
+			data-ad-slot="tu-slot-de-anuncio" data-ad-format="auto"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<!-- Fin del anuncio de Google AdSense -->
+
 
 	<!-- Footer -->
 	<footer class="footer section ">

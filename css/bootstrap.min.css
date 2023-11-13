@@ -745,6 +745,10 @@ pre code {
     max-width: none
 }
 
+/* element.style {
+    background-color: rgb(40, 167, 69);
+} */
+
 .col-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
