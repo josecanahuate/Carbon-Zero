@@ -1,9 +1,8 @@
 @media (min-width: 991px) and (max-width: 1280px) {
-
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .section-title {
-	padding: 0 90px;
+	padding: 0 60px;
 }
 .topbar::before, .topbar::after{
 	display:none;
@@ -75,30 +74,14 @@
 .image-gallery #gallery-menu li {
 	padding: 12px 20px;
 }
-.testimonials .video-box.overlay {
-	position: relative;
-	width: ;
-	width: 100%;
-	height: 400px;
-}
+
 .register-today .course-countdown {
 	margin: 0 0 50px;
 }
 .event-img{
 	display:none;
 }
-.testimonials .testimonial-slider {
-	padding: 100px 70px;
-}
-.testimonials .single-testimonial img {
-	display: inline-block;
-}
-.testimonials .single-testimonial {
-	text-align: center;
-}
-.testimonials .owl-controls .owl-dots {
-	text-align: center;
-}
+
 .cta .cta-image {
 	position: relative;
 	right: 0;
@@ -245,12 +228,6 @@
 	width: 212px;
 }
 
-/* DESBLOQUEAR SI NO DA PROBLEMAS, ESTANDO BLOQUEADO*/
-/* .home-slider, .home-slider .single-slider {
-	height: 450px;
-} */
-
-
 .home-slider .slider-title span {
 	font-size: 15px;
 }
@@ -305,21 +282,11 @@
 .event-img{
 	display:none;
 }
-.testimonials .testimonial-slider {
-	padding: 100px 20px;
-}
+
 .register-today .coming-course h2 {
 	font-size: 45px;
 }
-.testimonials .single-testimonial img {
-	display: inline-block;
-}
-.testimonials .single-testimonial {
-	text-align: center;
-}
-.testimonials .owl-controls .owl-dots {
-	text-align: center;
-}
+
 .cta .cta-image {
 	position: relative;
 	right: 0;

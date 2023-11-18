@@ -55,10 +55,6 @@ img {
 }
 
 
-
-
-
-
 svg:not(:root) {
 	overflow: hidden;
 }
@@ -280,11 +276,6 @@ textarea::-ms-input-placeholder {
 .eduland-color span.color8{background-color:#ED1C24;}
 .eduland-color span.color9{background-color:#06C46B;}
 .eduland-color span.color10{background-color:#FF9800;}
-
-
-
-
-
 
 
 

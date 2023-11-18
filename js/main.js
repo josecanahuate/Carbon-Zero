@@ -144,7 +144,25 @@
 			}
 		});	
 		
+		
+		/*================================
+			SPINNER START
+		==================================*/
+/* 		document.addEventListener("DOMContentLoaded", function () {
+			// Show the spinner when the page starts loading
+			document.getElementById("spinner").style.display = "flex";
+		
+			// Hide the spinner when the page is fully loaded
+			window.addEventListener("load", function () {
+				document.getElementById("spinner").style.display = "none";
+			});
+		}); */
+		/*================================
+			SPINNER END
+		==================================*/
 
+
+		
 		/*================================
 			Image Gallery JS
 		==================================*/
@@ -183,6 +201,19 @@
 		});
 
 		
+		/*================================
+			YEAR FOOTER
+		==================================*/
+		// Selecciona el elemento donde se mostrará el año
+		const currentYearElement = document.getElementById('currentYear');
+
+		// Obtiene el año actual
+		const currentYear = new Date().getFullYear();
+
+		// Actualiza el contenido del elemento con el año actual
+		currentYearElement.textContent = currentYear;
+
+
 		/*================================
 			CounterUp JS
 		==================================*/

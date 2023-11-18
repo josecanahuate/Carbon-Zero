@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Viewport for responsive web design -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#28a745"/>
+  <meta name="theme-color" content="#28a745" />
 
   <!-- Title -->
   <title>CarbonZero &minus; Nosotros</title>
@@ -77,45 +77,20 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  	<!--GOOGLE ADSENSE---->
-	<meta name="google-adsense-account" content="ca-pub-4434685305331116">
+  <!--GOOGLE ADSENSE---->
+  <meta name="google-adsense-account" content="ca-pub-4434685305331116">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTJKBM37SJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-QTJKBM37SJ');
 </script>
-<body>
 
-    <!-- INICIO FIREBASE -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-      
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCHiubIbxfEBMxWIsThKz8zmNAAZGJIH2s",
-        authDomain: "carbon-zero-8a89c.firebaseapp.com",
-        projectId: "carbon-zero-8a89c",
-        storageBucket: "carbon-zero-8a89c.appspot.com",
-        messagingSenderId: "865884105482",
-        appId: "1:865884105482:web:2288b60d8e56a04e59a8f3",
-        measurementId: "G-PDXZH2GN2G"
-      };
-      
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-      </script>
-    <!-- FIN FIREBASE -->
+<body>
 
   <!-- Header -->
   <header class="header">
@@ -143,11 +118,12 @@
                     <li>
                       <a href="index.html"><i class="fa fa-home"></i>Inicio</a>
                     </li>
+
                     <li>
-                      <a href="personas.html"><i class="fa fa-clone"></i>Personas</a>
+                      <a href="personas.html"><i class="fa fa-recycle"></i>Acciones</a>
                     </li>
-                    <li>
-                      <a href="#"><i class="fa fa-clone"></i>Calculadora</a>
+
+                    <li><a href="#"><i class="fa fa-calculator"></i>Calculadora</a>
                       <ul class="dropdown">
                         <li>
                           <a href="calculadora_personal.html">Personal</a>
@@ -158,10 +134,10 @@
                       </ul>
                     </li>
                     <li>
-                      <a href="recursos.html"><i class="fa fa-bullhorn"></i>Recursos</a>
+                      <a href="recursos.html"><i class="fa fa-sun-o"></i>Recursos</a>
                     </li>
                     <li class="active">
-                      <a href="nosotros.html"><i class="fa fa-bullhorn"></i>Nosotros</a>
+                      <a href="nosotros.html"><i class="fa fa-user"></i>Nosotros</a>
                     </li>
                   </ul>
                   <!-- End Main Menu -->
@@ -188,8 +164,8 @@
             <li>
               <a href="index.html">Inicio<i class="fa fa-angle-right"></i></a>
             </li>
-            <!-- <li><a href="#">Personas<i class="fa fa-angle-right"></i></a></li> -->
-            <li class="active"><a href="events.html">Nosotros</a></li>
+            <!-- <li><a href="#">Acciones<i class="fa fa-angle-right"></i></a></li> -->
+            <li class="active"><a href="nosotros.html">Nosotros</a></li>
           </ul>
         </div>
       </div>
@@ -238,73 +214,77 @@
   <!--/ End Events -->
 
   <!-- Footer -->
-	<footer class="footer section">
-		<!-- Footer Top -->
-		<div class="footer-top overlay copyabout">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-12">
-						<!-- About -->
-						<div class="single-widget about">
-							<h2>Acerca de CarbonZero</h2>
-							<ul class="list">
-								<!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
-										<li><i class="fa fa-envelope"></i><a>tristardevelopsf@gmail.com</a></li>
-								<li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
-							</ul>
-							<!-- Social -->
-							<ul class="social">
-								<li class="active"><a href="https://www.instagram.com/tristardevelops/"
-										target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						</div>
-						<!--/ End About -->
-					</div>
+  <footer class="footer section">
+    <!-- Footer Top -->
+    <div class="footer-top overlay copyabout">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <!-- About -->
+            <div class="single-widget about">
+              <h2>Acerca de CarbonZero</h2>
+              <ul class="list">
+                <!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
+                <li><i class="fa fa-envelope"></i><a>tristardevelopsf@gmail.com</a></li>
+                <li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
+              </ul>
+              <!-- Social -->
+              <ul class="social">
+                <li class="active"><a href="https://www.instagram.com/tristardevelops/" target="_blank"><i
+                      class="fa fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              </ul>
+              <!-- End Social -->
+            </div>
+            <!--/ End About -->
+          </div>
 
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Páginas</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i><a href="#">Inicio</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="personas.html">Personas</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="recursos.html">Recursos</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-							</ul>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="single-widget list">
+              <h2>Páginas</h2>
+              <ul>
+                <li><i class="fa fa-angle-right"></i><a href="#">Inicio</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="personas.html">Acciones</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="recursos.html">Recursos</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="nosotros.html">Sobre Nosotros</a></li>
+              </ul>
 
-						</div>
-					</div>
+            </div>
+          </div>
 
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Calculadoras Ambientales</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i><a href="calculadora_personal.html">Personal</a>
-								</li>
-								<li><i class="fa fa-angle-right"></i><a href="calculadora_empresa.html">Empresarial</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="single-widget list">
+              <h2>Calculadoras Ambientales</h2>
+              <ul>
+                <li><i class="fa fa-angle-right"></i><a href="calculadora_personal.html">Personal</a>
+                </li>
+                <li><i class="fa fa-angle-right"></i><a href="calculadora_empresa.html">Empresarial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Privacidad y Condiciones</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i> <a target="_blank"  href="https://www.privacypolicytemplate.net/live.php?token=Pj1gUdFGY1O19pjr6uiLyRpwAxhXQ6BO">Política de privacidad</a></li>
-								<!-- <li><i class="fa fa-angle-right"></i> <a target="_blank"  href="https://www.generateprivacypolicy.com/live.php?token=vWHNpIqSmSlN2LispzzZSS09ZpEQiTEj">Política de privacidad</a></li> -->
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="single-widget list">
+              <h2>Privacidad y Condiciones</h2>
+              <ul>
+                <li><i class="fa fa-angle-right"></i> <a target="_blank"
+                    href="https://www.privacypolicytemplate.net/live.php?token=Pj1gUdFGY1O19pjr6uiLyRpwAxhXQ6BO">Política
+                    de privacidad</a></li>
+                <!-- <li><i class="fa fa-angle-right"></i> <a target="_blank"  href="https://www.generateprivacypolicy.com/live.php?token=vWHNpIqSmSlN2LispzzZSS09ZpEQiTEj">Política de privacidad</a></li> -->
 
-								<li><i class="fa fa-angle-right"></i>  <a target="_blank" href="https://www.privacypolicies.com/live/1441df6e-bce6-4e7e-9994-0a46b454ebb2">Términos y Condiciones</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Footer Top -->
-    
+                <li><i class="fa fa-angle-right"></i> <a target="_blank"
+                    href="https://www.privacypolicies.com/live/1441df6e-bce6-4e7e-9994-0a46b454ebb2">Términos y
+                    Condiciones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ End Footer Top -->
+
     <!-- Footer Bottom -->
     <div class="footer-bottom">
       <div class="container">
@@ -312,11 +292,8 @@
           <div class="col-12">
             <!-- Copyright -->
             <div class="copyright">
-              <p>
-                © Copyright CarbonZero 2023. Diseño y Desarrollo por
-                <a href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar Develops</a>
-              </p>
-            </div>
+							<p>© Copyright CarbonZero <span id="currentYear"></span>. <a href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar Develops</a></p>
+						</div>
             <!--/ End Copyright -->
           </div>
         </div>
@@ -325,6 +302,7 @@
     <!--/ End Footer Bottom -->
   </footer>
   <!--/ End Footer -->
+
 
   <!-- Jquery JS-->
   <script src="js/jquery.min.js"></script>

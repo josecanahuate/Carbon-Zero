@@ -169,15 +169,15 @@
 									<!-- Main Menu -->
 									<ul id="nav" class="nav menu navbar-nav">
 										<li><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
-										<li><a href="personas.html"><i class="fa fa-clone"></i>Personas</a></li>
-										<li class="active"><a href="#"><i class="fa fa-clone"></i>Calculadora</a>
+										<li><a href="personas.html"><i class="fa fa-recycle"></i>Acciones</a></li>
+										<li class="active"><a href="#"><i class="fa fa-calculator"></i>Calculadora</a>
 											<ul class="dropdown">
 												<li><a href="calculadora_personal.html">Personal</a></li>
 												<li><a href="calculadora_empresa.html">Empresa</a></li>
 											</ul>
 										</li>
-										<li><a href="recursos.html"><i class="fa fa-bullhorn"></i>Recursos</a></li>
-										<li><a href="nosotros.html"><i class="fa fa-bullhorn"></i>Nosotros</a></li>
+										<li><a href="recursos.html"><i class="fa fa-sun-o"></i>Recursos</a></li>
+										<li><a href="nosotros.html"><i class="fa fa-user"></i>Nosotros</a></li>
 									</ul>
 									<!-- End Main Menu -->
 								</div>
@@ -506,7 +506,7 @@
 							<h2>Páginas</h2>
 							<ul>
 								<li><i class="fa fa-angle-right"></i><a href="#">Inicio</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="personas.html">Personas</a></li>
+								<li><i class="fa fa-angle-right"></i><a href="personas.html">Acciones</a></li>
 								<li><i class="fa fa-angle-right"></i><a href="recursos.html">Recursos</a></li>
 								<li><i class="fa fa-angle-right"></i><a href="nosotros.html">Sobre Nosotros</a></li>
 							</ul>
@@ -554,7 +554,7 @@
 					<div class="col-12">
 						<!-- Copyright -->
 						<div class="copyright">
-							<p>© Copyright CarbonZero 2023. Diseño y Desarrollo por <a
+							<p>© Copyright CarbonZero <span id="currentYear"></span>. <a
 									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
 									Develops</a></p>
 						</div>
@@ -703,8 +703,30 @@
 			}
 		}
 
-		@media (min-width:1280px) {
+		@media (min-width:1027px) and (max-width: 1279px) {
 
+			.huellaempresa {
+				margin-top: 10px
+			}
+
+			#loading {
+				width: 100%;
+				margin-top: 130px;
+				margin-left: 20px;
+			}
+
+			.header .navbar {
+				background: none;
+				box-shadow: none;
+				border: none;
+				position: relative;
+				padding: 0;
+				float: right;
+				padding-right: 10px;
+			}
+		}
+
+		@media (min-width:1280px) {
 			#loading {
 				width: 100%;
 				margin-top: 130px;
