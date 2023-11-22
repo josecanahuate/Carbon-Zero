@@ -45,10 +45,11 @@
   <meta name="msapplication-starturl" content="/index.html">
 
   <!-- Canonical URL-->
-  <link rel="canonical" href="https://carbonzero.lat/">
+  <link rel="canonical" href="https://carbonzero.lat/calculadora_personal.html">
 
   <!-- Web Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+		
 
   <!-- Preload de Imágenes de la pagina empresa -->
   <img src="images/courses/recursos1.webp" alt="recursos" style="display: none;">
@@ -57,26 +58,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Nice Select CSS -->
-  <link rel="stylesheet" href="css/niceselect.css">
-  <!-- Fancy Box CSS -->
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <!-- Fancy Box CSS -->
-  <link rel="stylesheet" href="css/cube-portfolio.min.css">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="css/animate.min.css">
   <!-- Slick Nav CSS -->
   <link rel="stylesheet" href="css/slicknav.min.css">
   <!-- Magnific Popup -->
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
   <!-- Eduland Stylesheet -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
-
   <!-- Eduland Colors -->
   <link rel="stylesheet" href="css/colors/color1.css">
 
@@ -119,33 +107,8 @@
 
 <body>
 
-  <!-- INICIO FIREBASE -->
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyCHiubIbxfEBMxWIsThKz8zmNAAZGJIH2s",
-      authDomain: "carbon-zero-8a89c.firebaseapp.com",
-      projectId: "carbon-zero-8a89c",
-      storageBucket: "carbon-zero-8a89c.appspot.com",
-      messagingSenderId: "865884105482",
-      appId: "1:865884105482:web:2288b60d8e56a04e59a8f3",
-      measurementId: "G-PDXZH2GN2G"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-  <!-- FIN FIREBASE -->
-
-
+  <script type="module" src="js/fbasonfi.js"></script>							
+  
   <!-- Header -->
   <header class="header">
     <!-- Header Inner -->
@@ -242,14 +205,13 @@
 
       <!--Anuncio de Google AdSense 2022-->
       <!-- Inicio del anuncio de Google AdSense -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
+<!--       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
         crossorigin="anonymous"></script>
-      <!-- adsres1 -->
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="3102218205"
         data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      </script> -->
       <!-- Fin del anuncio de Google AdSense -->
 
       <div class="row">
@@ -431,14 +393,13 @@
 
   <!--Anuncio de Google AdSense 2022-->
   <!-- Inicio del anuncio de Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
+<!--   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
     crossorigin="anonymous"></script>
-  <!-- adsres2 -->
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="3082909043"
     data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  </script> -->
   <!-- Fin del anuncio de Google AdSense -->
 
   
@@ -461,7 +422,8 @@
               <ul class="social">
                 <li class="active"><a href="https://www.instagram.com/tristardevelops/" target="_blank"><i
                       class="fa fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/tristardevelops" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
               </ul>
               <!-- End Social -->
             </div>
@@ -520,10 +482,11 @@
         <div class="row">
           <div class="col-12">
             <!-- Copyright -->
-              <div class="copyright">
-                <p>© Copyright CarbonZero <span id="currentYear"></span>. <a href="https://www.instagram.com/tristardevelops/"
-                    target="_blank">Tristar Develops</a></p>
-              </div>
+						<div class="copyright">
+							<p>© Copyright CarbonZero 2023. <a
+									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
+									Develops</a></p>
+						</div>
             <!--/ End Copyright -->
           </div>
         </div>
@@ -538,18 +501,11 @@
   <script src="js/jquery-migrate.min.js"></script>
   <!-- Colors JS-->
   <script src="js/colors.js"></script>
-  <!-- Popper JS-->
-  <script src="js/popper.min.js"></script>
-  <!-- Bootstrap JS-->
-  <script src="js/bootstrap.min.js"></script>
   <!-- Owl Carousel JS-->
   <script src="js/owl.carousel.min.js"></script>
   <!-- Jquery Steller JS -->
   <script src="js/jquery.stellar.min.js"></script>
-  <!-- Final Countdown JS -->
-  <script src="js/finalcountdown.min.js"></script>
-  <!-- Fancy Box JS-->
-  <script src="js/facnybox.min.js"></script>
+  <!-- Final Countdown JS -->					
   <!-- Magnific Popup JS-->
   <script src="js/jquery.magnific-popup.min.js"></script>
   <!-- Circle Progress JS -->
@@ -561,9 +517,7 @@
   <!-- Jquery Steller JS-->
   <script src="js/cube-portfolio.min.js"></script>
   <!-- Slick Nav JS-->
-  <script src="js/slicknav.min.js"></script>
-  <!-- Easing JS-->
-  <script src="js/easing.min.js"></script>
+  <script src="js/slicknav.min.js"></script>							
   <!-- Waypoints JS-->
   <script src="js/waypoints.min.js"></script>
   <!-- Counter Up JS -->
@@ -571,7 +525,6 @@
   <!-- Scroll Up JS-->
   <script src="js/jquery.scrollUp.min.js"></script>
   <!-- Gmaps JS-->
-  <script src="js/gmaps.min.js"></script>
   <!-- Main JS-->
   <script src="js/main.js"></script>
 

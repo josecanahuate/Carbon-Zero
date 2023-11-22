@@ -44,10 +44,11 @@
 	<meta name="msapplication-starturl" content="/index.html">
 
 	<!-- Canonical URL-->
-	<link rel="canonical" href="https://carbonzero.lat/">
+	<link rel="canonical" href="https://carbonzero.lat/calculadora_personal.html">
 
 		<!-- Web Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+		
 
 	<!-- Preload de Imágenes de la pagina empresa -->
 	<img src="images/courses/personal11.webp" alt="personal" style="display: none;">
@@ -56,20 +57,19 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Nice Select CSS -->
-	<link rel="stylesheet" href="css/niceselect.css">
+
 	<!-- Fancy Box CSS -->
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	
 	<!-- Fancy Box CSS -->
-	<link rel="stylesheet" href="css/cube-portfolio.min.css">
+	
 	<!-- Owl Carousel CSS -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.min.css">
+	
 	<!-- Slick Nav CSS -->
 	<link rel="stylesheet" href="css/slicknav.min.css">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	
 
 	<!-- Eduland Stylesheet -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -121,32 +121,7 @@
 
 <body>
 
-	<!-- INICIO FIREBASE -->
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCHiubIbxfEBMxWIsThKz8zmNAAZGJIH2s",
-			authDomain: "carbon-zero-8a89c.firebaseapp.com",
-			projectId: "carbon-zero-8a89c",
-			storageBucket: "carbon-zero-8a89c.appspot.com",
-			messagingSenderId: "865884105482",
-			appId: "1:865884105482:web:2288b60d8e56a04e59a8f3",
-			measurementId: "G-PDXZH2GN2G"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	</script>
-	<!-- FIN FIREBASE -->
-
+	<script type="module" src="js/fbasonfi.js"></script>							
 
 	<style>
 		a {
@@ -231,15 +206,14 @@
 
 				<!--Anuncio de Google AdSense 2022-->
 				<!-- Inicio del anuncio de Google AdSense -->
-				<script async
+<!-- 				<script async
 					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
 					crossorigin="anonymous"></script>
-				<!-- adscalp -->
 				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116"
 					data-ad-slot="4223728185" data-ad-format="auto" data-full-width-responsive="true"></ins>
 				<script>
 					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+				</script> -->
 				<!-- Fin del anuncio de Google AdSense -->
 
 				<div class="container">
@@ -251,7 +225,7 @@
 									<h3><i class="fa fa-home"></i> Hogar</h3>
 									<hr class="featurette-divider">
 									<div class="form-group" style="margin-top: 20px;">
-										<!-- (kgXco2 * hrs semanal) * mes -->
+								
 										<label for="question1"><strong>Selecciona los dispositivos electrónicos que
 												utilizas regularmente en tu casa.</strong></label>
 
@@ -259,28 +233,28 @@
 											<input class="form-check-input" type="checkbox"
 												id="dispositivosElectronicos" name="Televisor" value="Televisor">
 											<label class="form-check-label">Televisor</label>
-											<!-- (0.195 * 10hrs) * 4 -->
+								
 										</div>
 
 										<div class="form-check">
 											<input class="form-check-input" type="checkbox" name="Computadora"
 												value="Computadora">
 											<label class="form-check-label">Computadora</label>
-											<!-- (0.234 * 5hrs) * 4 -->
+										
 										</div>
 
 										<div class="form-check">
 											<input class="form-check-input" type="checkbox" name="Aspiradora"
 												value="Aspiradora">
 											<label class="form-check-label">Aspiradora</label>
-											<!-- (1.3 * 1hrs) * 4 -->
+										
 										</div>
 
 										<div class="form-check">
 											<input class="form-check-input" type="checkbox" name="Microondas"
 												value="Microondas">
 											<label class="form-check-label">Microondas</label>
-											<!-- (1.365 * 0.30 hrs) * 4 -->
+										
 										</div>
 
 										<div class="form-check">
@@ -297,7 +271,7 @@
 											<input class="form-check-input" type="checkbox" name="Lavavajillas"
 												value="Lavavajillas">
 											<label class="form-check-label">Lavavajillas</label>
-											<!-- (1.950 * 2 hrs) * 4 -->
+										
 										</div>
 
 										<div class="form-check">
@@ -313,17 +287,11 @@
 											<input class="form-check-input" type="radio" name="question1"
 												value="aire15">
 											<label class="form-check-label">Más de 15 horas a la semana.</label>
-											<!-- kgXco2 = 2 -->
-											<!-- HrsxSemana = 20 -->
-											<!-- (2 x 20) * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="question1"
 												value="aire510">
 											<label class="form-check-label">5-10 horas a la semana.</label>
-											<!-- kgXco2 = 2 -->
-											<!-- HrsxSemana = 8 -->
-											<!-- (1.5 x 8) * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="question1"
@@ -340,15 +308,11 @@
 											<input class="form-check-input" type="radio" name="cocina"
 												value="cocinarmas5">
 											<label class="form-check-label">Más de 5 veces a la semana.</label>
-											<!-- kgXco2 = 6.4675 kg CO2/semana -->
-											<!-- 6.4675 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="cocina"
 												value="cocinar34">
 											<label class="form-check-label">3-4 veces a la semana.</label>
-											<!-- kgXco2 = 0.3325 kg CO2/semana -->
-											<!-- 0.3325 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="cocina" value="option1">
@@ -386,21 +350,16 @@
 									<div class="form-group" style="margin-top: 20px;">
 										<label for="question4"><strong>¿Cuántas veces a la semana consumes carne?
 												(Pollo, Res, Cerdo, Cordero, etc...)</strong></label>
-										<!-- sumamos las huellas de la carne roja y pollo para tener un calculo mas completo -->
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="carne3" name="carne"
 												value="carne3">
 											<label class="form-check-label" for="carne3">Más de 3 veces a la
 												semana.</label>
-											<!-- 20 kg de CO2 por semana. -->
-											<!-- 20 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="carne12" name="carne"
 												value="carne12">
 											<label class="form-check-label" for="carne12">1-2 veces a la semana.</label>
-											<!-- 10 kg de CO2 por semana. -->
-											<!-- 10 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="carne">
@@ -416,16 +375,12 @@
 												value="pescado3">
 											<label class="form-check-label" for="pescado3">Más de 3 veces a la
 												semana.</label>
-											<!-- 25 kg de CO2 por semana. -->
-											<!-- 25 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="pescado12" name="pescado"
 												value="pescado12">
 											<label class="form-check-label" for="pescado12">1-2 veces a la
 												semana.</label>
-											<!-- 15 kg de CO2 por semana. -->
-											<!-- 15 * 4 -->
 										</div>
 
 										<div class="form-check">
@@ -443,16 +398,12 @@
 												value="lacteo3">
 											<label class="form-check-label" for="lacteo3">Más de 3 veces a la
 												semana.</label>
-											<!-- 10 kg de CO2 por semana. -->
-											<!-- 10 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="lacteo" id="lacteo12"
 												value="lacteo12">
 											<label class="form-check-label" for="lacteo12">1-2 veces a la
 												semana.</label>
-											<!-- 5.2 kg de CO2 por semana. -->
-											<!-- 5.2 * 4 -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="lacteo">
@@ -475,27 +426,23 @@
 											<input class="form-check-input" type="radio" id="electricidad25"
 												name="electricidad" value="electricidad25">
 											<label class="form-check-label" for="electricidad25">Menos de $25.</label>
-											<!-- 15 * 0.45 kg CO2 por dólar; -->
 										</div>
 
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="electricidad50"
 												name="electricidad" value="electricidad50">
 											<label class="form-check-label" for="electricidad50">Menos de $50.</label>
-											<!-- 30 * 0.45 kg CO2 por dólar; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="electricidad50150"
 												name="electricidad" value="electricidad50150">
 											<label class="form-check-label" for="electricidad50150">Entre $50 y
 												$150.</label>
-											<!-- 100 * 0.45 kg CO2 por dólar; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="electricidad150"
 												name="electricidad" value="electricidad150">
 											<label class="form-check-label" for="electricidad150">Más de $150.</label>
-											<!-- 180 * 0.000309; -->
 										</div>
 									</div>
 
@@ -507,27 +454,23 @@
 											<input class="form-check-input" type="radio" id="calefaccion25"
 												name="calefaccion" value="calefaccion25">
 											<label class="form-check-label" for="calefaccion25">Menos de $25.</label>
-											<!-- 20 * 0.309 kg CO2 por dólar; -->
 										</div>
 
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="calefaccion50"
 												name="calefaccion" value="calefaccion50">
 											<label class="form-check-label" for="calefaccion50">Menos de $50.</label>
-											<!-- 30 * 0.309 kg CO2 por dólar; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="calefaccion50100"
 												name="calefaccion" value="calefaccion50100">
 											<label class="form-check-label" for="calefaccion50100">Entre $50 y
 												$100.</label>
-											<!-- 100 * 0.309 kg CO2 por dólar; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="  calefaccion100"
 												id="calefaccion100" name="calefaccion" value="calefaccion100">
 											<label class="form-check-label" for="calefaccion100">Más de $100.</label>
-											<!-- 150 * 0.309 kg CO2 por dólar; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" name="calefaccion" type="radio">
@@ -543,19 +486,16 @@
 											<input class="form-check-input" type="radio" id="gascocina20"
 												name="gascocina" value="gascocina20">
 											<label class="form-check-label" for="gascocina20">Menos de $20</label>
-											<!-- 15 * 0.3325; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="gascocina20"
 												name="gascocina" value="gascocina2050">
 											<label class="form-check-label" for="gascocina20">Entre $20 y $50</label>
-											<!-- 35 * 0.3325; -->
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" id="gascocina50"
 												name="gascocina" value="gascocina50">
 											<label class="form-check-label" for="gascocina50">Más de $50</label>
-											<!-- 75 * 0.3325; -->
 										</div>
 									</div>
 									<button type="button" class="btn btn-primary prev-step">Anterior</button>
@@ -589,7 +529,6 @@
 												<div class="col">
 													<label class="form-check-label">¿Cuánto gastas en gasolina por
 														mes?</label>
-													<!-- txt * 0.00218; -->
 												</div>
 												<div class="col">
 													<input type="text" class="form-control" id="gasolina">
@@ -602,7 +541,6 @@
 												<div class="col">
 													<label class="form-check-label">¿Cuánto gastas en Diésel por
 														mes?</label>
-													<!-- txt * 0.002467; -->
 												</div>
 												<div class="col">
 													<input type="text" class="form-control" id="diesel">
@@ -615,7 +553,6 @@
 												<div class="col">
 													<label class="form-check-label">¿Cuánto gastas en Gas Natural
 														por mes?</label>
-													<!-- txt * 0.000182; -->
 												</div>
 												<div class="col">
 													<input type="text" class="form-control" id="gasnatural">
@@ -681,7 +618,6 @@
 													<div class="col">
 														<label class="form-check-label">¿Cuánto veces utilizas el
 															bus por semana?</label>
-														<!-- txt * 4 kg CO2/viaje -->
 													</div>
 													<div class="col">
 														<input type="text" class="form-control" id="bus">
@@ -690,12 +626,10 @@
 											</div>
 
 											<div class="form-check">
-												<!-- <input class="form-check-input" type="checkbox" value="taxi"> -->
 												<div class="row">
 													<div class="col">
 														<label class="form-check-label">¿Cuánto veces utilizas taxi
 															por semana?</label>
-														<!-- txt * 10 kg CO2/viaje -->
 													</div>
 													<div class="col">
 														<input type="text" class="form-control" id="taxi">
@@ -764,13 +698,11 @@
 													<div class="col">
 														<input type="text" class="form-control"
 															id="viajesinternacionales">
-														<!-- txt * 1000 kg CO2/vuelo -->
 													</div>
 												</div>
 											</div>
 
 											<div class="form-check">
-												<!-- <input class="form-check-input" type="radio" name="question19" value="viajesnacionales"> -->
 												<div class="row">
 													<div class="col">
 														<label class="form-check-label">¿Cuántos vuelos nacionales
@@ -778,7 +710,6 @@
 													</div>
 													<div class="col">
 														<input type="text" class="form-control" id="viajesnacionales">
-														<!-- txt * 800 kg CO2/vuelo -->
 													</div>
 												</div>
 											</div>
@@ -806,7 +737,7 @@
 										nacionalInput.disabled = avionnoRadioButton.checked;
 
 										if (avionnoRadioButton.checked) {
-											internacionalInput.value = ''; // También puedes borrar el valor del input si está deshabilitado
+											internacionalInput.value = ''; 
 											nacionalInput.value = '';
 										}
 									});
@@ -839,7 +770,6 @@
 									</div>
 
 									<script>
-										// Actualiza el contenido del elemento h2 con el valor calculado
 										const emissionsResultElement = document.getElementById('emissionsResult');
 										emissionsResultElement.textContent = `${totalEmissions.toFixed(2)} kg CO2`;
 									</script>
@@ -1002,13 +932,13 @@
 
 	<!--Anuncio de Google AdSense 2022-->
 	<!-- Inicio del anuncio de Google AdSense -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
+<!-- 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
      crossorigin="anonymous"></script>
 	<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-4434685305331116"
 		data-ad-slot="7428476022"></ins>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
+	</script> -->
 	<!-- Fin del anuncio de Google AdSense -->
 
 	<!-- Footer -->
@@ -1022,7 +952,7 @@
 						<div class="single-widget about">
 							<h2>Acerca de CarbonZero</h2>
 							<ul class="list">
-								<!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
+										
 								<li><i class="fa fa-envelope"></i><a>tristardevelopsf@gmail.com</a></li>
 								<li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
 							</ul>
@@ -1030,7 +960,8 @@
 							<ul class="social">
 								<li class="active"><a href="https://www.instagram.com/tristardevelops/"
 										target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/tristardevelops" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
 							</ul>
 							<!-- End Social -->
 						</div>
@@ -1069,7 +1000,6 @@
 								<li><i class="fa fa-angle-right"></i> <a target="_blank"
 										href="https://www.privacypolicytemplate.net/live.php?token=Pj1gUdFGY1O19pjr6uiLyRpwAxhXQ6BO">Política
 										de privacidad</a></li>
-								<!-- <li><i class="fa fa-angle-right"></i> <a target="_blank"  href="https://www.generateprivacypolicy.com/live.php?token=vWHNpIqSmSlN2LispzzZSS09ZpEQiTEj">Política de privacidad</a></li> -->
 
 								<li><i class="fa fa-angle-right"></i> <a target="_blank"
 										href="https://www.privacypolicies.com/live/1441df6e-bce6-4e7e-9994-0a46b454ebb2">Términos
@@ -1089,10 +1019,11 @@
 				<div class="row">
 					<div class="col-12">
 						<!-- Copyright -->
-							<div class="copyright">
-								<p>© Copyright CarbonZero <span id="currentYear"></span>. <a href="https://www.instagram.com/tristardevelops/"
-										target="_blank">Tristar Develops</a></p>
-							</div>
+						<div class="copyright">
+							<p>© Copyright CarbonZero 2023. <a
+									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
+									Develops</a></p>
+						</div>
 						<!--/ End Copyright -->
 					</div>
 				</div>
@@ -1104,25 +1035,16 @@
 
 	<!-- Jquery JS-->
 	<script src="js/jquery.min.js"></script>
-
 	<!-- CALCULADORA CO2-->
 	<script src="js/calculadoraco2.js"></script>
-
 	<script src="js/jquery-migrate.min.js"></script>
 	<!-- Colors JS-->
 	<script src="js/colors.js"></script>
-	<!-- Popper JS-->
-	<script src="js/popper.min.js"></script>
-	<!-- Bootstrap JS-->
-	<script src="js/bootstrap.min.js"></script>
 	<!-- Owl Carousel JS-->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Jquery Steller JS -->
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Final Countdown JS -->
-	<script src="js/finalcountdown.min.js"></script>
-	<!-- Fancy Box JS-->
-	<script src="js/facnybox.min.js"></script>
 	<!-- Magnific Popup JS-->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<!-- Circle Progress JS -->
@@ -1134,8 +1056,6 @@
 	<script src="js/cube-portfolio.min.js"></script>
 	<!-- Slick Nav JS-->
 	<script src="js/slicknav.min.js"></script>
-	<!-- Easing JS-->
-	<script src="js/easing.min.js"></script>
 	<!-- Waypoints JS-->
 	<script src="js/waypoints.min.js"></script>
 	<!-- Counter Up JS -->
@@ -1143,8 +1063,7 @@
 	<!-- Scroll Up JS-->
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<!-- Gmaps JS-->
-	<script src="js/gmaps.min.js"></script>
-
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 		crossorigin="anonymous"></script>

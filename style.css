@@ -3,7 +3,6 @@
 }
 /* Header Inner */
 .header .header-inner {
-	background-image: url('images/bg-pattern1.png');
 	background-repeat: repeat-y;
 	background-position: center;
 	position: relative;
@@ -165,38 +164,6 @@
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     display: none;
 }
-/*
-.spinner-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #05C46B; /* Green color 
-}*/
-/*
-/* You can customize the spinner styles here
-.spinner-border {
-    width: 3rem;
-    height: 3rem;
-}
-/*
-
-/*** Spinner
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-***/
-
 
 
 /*===============================
@@ -716,26 +683,6 @@ margin-top: -110px;
 	End Call to Action CSS 
 =================================*/
 
-/*===============================
-	Latest News CSS 
-=================================*/
-/* Slider Meta */
-/* News Archive */
-/*===============================
-	End Latest News CSS 
-=================================*/
-
-/*=============================
-	News Sidebar CSS
-===============================*/
-/* Course Sidebar */
-/* Latest news */
-/* Category */
-/* Subscribe */
-/* Tags */
-/*=============================
-	End News Sidebar CSS
-===============================*/
 
 /*=============================
 	Faqs CSS

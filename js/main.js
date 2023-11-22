@@ -200,18 +200,31 @@
 			lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
 		});
 
-		
+	
 		/*================================
-			YEAR FOOTER
+			CAROUSEL IMAGE CHANGE
 		==================================*/
-		// Selecciona el elemento donde se mostrará el año
-		const currentYearElement = document.getElementById('currentYear');
 
-		// Obtiene el año actual
-		const currentYear = new Date().getFullYear();
-
-		// Actualiza el contenido del elemento con el año actual
-		currentYearElement.textContent = currentYear;
+		const images = [
+			'images/slider/1.webp',
+			'images/slider/7.webp',
+			'images/slider/11.webp',
+			'images/slider/13.webp',
+			'images/slider/17.webp',
+			'images/slider/19.webp',
+			'images/slider/20.webp'
+		  ];
+		  let currentIndex = 0;
+		  const intervalDuration = 300000; // 5 minutes
+		  
+		  function changeBackgroundImage() {
+			const imageContainer = document.getElementById('images');
+			imageContainer.style.backgroundImage = `url(${images[currentIndex]})`;
+			currentIndex = (currentIndex + 1) % images.length;
+		  }
+		  
+		  setInterval(changeBackgroundImage, intervalDuration);
+		  
 
 
 		/*================================

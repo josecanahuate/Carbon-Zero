@@ -351,9 +351,6 @@ hr {
     max-width: 100%
 }
 
-/* element.style {
-    background-color: rgb(40, 167, 69);
-} */
 
 .col-12 {
     -ms-flex: 0 0 100%;
@@ -982,16 +979,11 @@ tbody.collapse.show {
         margin-right: 20px;
     }
 
-    .nosotros1 {
+    .nosotros1, .nosotros2, .huellapersonal {
         margin-left: 20px;
         margin-right: 20px;
     }
-
-    .nosotros2 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
+    
     .step-1, .step-2, .step-3, .step-4, .step-5, .step-6  {
         margin-left: 20px;
     }
@@ -1028,12 +1020,7 @@ tbody.collapse.show {
         margin-right: 20px;
     }
 
-    .nosotros1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .nosotros2 {
+    .nosotros1, .nosotros2 {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -1074,12 +1061,7 @@ tbody.collapse.show {
         margin-right: 20px;
     }
 
-    .nosotros1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .nosotros2 {
+    .nosotros1, .nosotros2 {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -1115,24 +1097,9 @@ tbody.collapse.show {
         margin-left: 20px;
     }
 
-    .step-1 {
+    .step-1, .step2, .step-3, .step-4, .step-5, .step-6 {  
         margin-left: 40px;
     }
-
-    .step-2 {
-        margin-left: 40px;
-    }
-
-    .step-3 {
-        margin-left: 40px;
-    }
-
-    .step-4,
-    .step-5,
-    .step-6 {
-        margin-left: 40px;
-    }
-
 
     .consejos {
         text-align: center;
@@ -1153,7 +1120,27 @@ tbody.collapse.show {
         .course-body {
             margin-bottom: 65px;
         } 
+
+        .nosotrosp{
+            margin-bottom: 120px;
+        }
+
 }
+
+@media (min-width:834px) and (max-width: 1194px) {  
+    .nosotrosp{
+        margin-bottom: 130px;
+    }
+}
+
+
+@media (min-width:800px) and (max-width: 1280px) {  
+    .nosotrosp{
+        margin-bottom: 170px;
+    }
+}
+
+
 
 .card {
     position: relative;

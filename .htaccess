@@ -1,1 +1,28 @@
-ErrorDocument 404 /404.html
+# Cacheo de imágenes por 1 semana
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|webp)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
+
+# Cacheo de archivos CSS y JavaScript por 1 día
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=86400, public"
+    </FilesMatch>
+</IfModule>
+
+# No almacenar en caché HTML
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "no-cache, private"
+    </FilesMatch>
+</IfModule>
+
+# Expiración de archivos .webp a 1 semana
+<IfModule mod_expires.c>
+    <FilesMatch "\.(webp)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 1 week"
+    </FilesMatch>
+</IfModule>

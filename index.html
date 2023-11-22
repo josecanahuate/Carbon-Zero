@@ -3,7 +3,7 @@
 
 <head>
 	<!-- Meta Tags -->
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<title>CarbonZero - Calculadora de Huella de Carbono</title>
@@ -43,10 +43,11 @@
 	<meta name="msapplication-starturl" content="/index.html">
 
 	<!-- Canonical URL-->
-	<link rel="canonical" href="https://carbonzero.lat/">
-
+	<link rel="canonical" href="https://carbonzero.lat/calculadora_personal.html">
+	
+	
 	<!-- Web Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
 
 	<!-- Preload de Imágenes del Slider -->
 	<img src="images/slider/19.webp" alt="Slider Image 1" style="display: none;">
@@ -55,20 +56,11 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Nice Select CSS -->
-	<link rel="stylesheet" href="css/niceselect.css">
-	<!-- Fancy Box CSS -->
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<!-- Fancy Box CSS -->
-	<link rel="stylesheet" href="css/cube-portfolio.min.css">
-	<!-- Owl Carousel CSS -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.min.css">
+	
 	<!-- Slick Nav CSS -->
 	<link rel="stylesheet" href="css/slicknav.min.css">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	
 	<!--  Stylesheet -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="style.css">
@@ -105,6 +97,7 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTJKBM37SJ"></script>
+
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
@@ -115,31 +108,7 @@
 
 <body>
 
-	<!-- INICIO FIREBASE -->
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCHiubIbxfEBMxWIsThKz8zmNAAZGJIH2s",
-			authDomain: "carbon-zero-8a89c.firebaseapp.com",
-			projectId: "carbon-zero-8a89c",
-			storageBucket: "carbon-zero-8a89c.appspot.com",
-			messagingSenderId: "865884105482",
-			appId: "1:865884105482:web:2288b60d8e56a04e59a8f3",
-			measurementId: "G-PDXZH2GN2G"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	</script>
-	<!-- FIN FIREBASE -->
+	<script type="module" src="js/fbasonfi.js"></script>
 
 	<!-- Header -->
 	<header class="header">
@@ -150,7 +119,7 @@
 					<div class="col-lg-3 col-md-3 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="images/courses/logo3.png"
+							<a href="index.html"><img src="images/courses/logo3.png" loading="lazy"
 									style="height: 60px; margin-top: -17px;"
 									alt="Logo de CarbonZero: Tu aliado para calcular, reducir y compensar tu huella de carbono de manera sostenible.">CarbonZero</a>
 						</div>
@@ -196,20 +165,6 @@
 				<div class="slider-image" id="images" alt="Imagen"
 					style="background-image:url('images/slider/19.webp')">
 				</div>
-
-				<script>
-					var images = ['images/slider/1.webp', 'images/slider/20.webp', 'images/slider/7.webp', 'images/slider/11.webp', 'images/slider/13.webp', 'images/slider/19.webp', 'images/slider/17.webp'];
-					var currentIndex = 0;
-					var intervalDuration = 30000;
-
-					function changeBackgroundImage() {
-						var imageContainer = document.getElementById('images');
-						imageContainer.style.backgroundImage = 'url(' + images[currentIndex] + ')';
-						currentIndex = (currentIndex + 1) % images.length;
-					}
-
-					setInterval(changeBackgroundImage, intervalDuration);
-				</script>
 
 				<div class="container">
 					<div class="row">
@@ -278,7 +233,7 @@
 
 
 				<div class="row">
-					<article class="col-lg-6" style="margin-top: 10px;">
+					<article class="col-lg-6" style="margin-top: 10px; margin-bottom: 20px;">
 						<div class="course-body" style="margin-top: 10px;">
 							 <h3 class="c-title huellapersonal" style="text-align: center;"><strong>Huella de Carbono Personal</strong>
 							</h3>
@@ -314,13 +269,13 @@
 
 
 	<!--Anuncio de Google AdSense 2023-->
-	<!-- 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
+	<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
 		crossorigin="anonymous"></script>
 	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="6514015459"
 		data-ad-format="auto" data-full-width-responsive="true"></ins>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script> -->
+	</script> 
 	<!-- Fin del anuncio de Google AdSense -->
 
 	<section class="courses archive section cardcauses">
@@ -330,7 +285,7 @@
 					<!-- Single Course -->
 					<div class="single-course">
 						<div class="course-head overlay">
-							<img src="images/courses/1.webp"
+							<img src="images/courses/1.webp" loading="lazy"
 								alt="Medidor de electricidad: Visualización en tiempo real para fomentar el ahorro y la conciencia sobre el consumo de energía"
 								style="border-radius: 5px;">
 						</div>
@@ -348,7 +303,7 @@
 					<!-- Single Course -->
 					<div class="single-course">
 						<div class="course-head overlay">
-							<img src="images/courses/3.webp"
+							<img src="images/courses/3.webp" loading="lazy"
 								alt="Carros en Autopista Representando Emisiones de CO2 por Medios de Transporte"
 								style="border-radius: 5px;">
 						</div>
@@ -365,7 +320,7 @@
 					<!-- Single Course -->
 					<div class="single-course">
 						<div class="course-head overlay">
-							<img src="images/courses/8.webp" alt="Alimentos y Emisiones de Carbono"
+							<img src="images/courses/8.webp" loading="lazy" alt="Alimentos y Emisiones de Carbono"
 								style="border-radius: 5px;">
 						</div>
 						<div class="course-body">
@@ -383,9 +338,8 @@
 					<!-- Single Course -->
 					<div class="single-course">
 						<div class="course-head overlay">
-							<img src="images/courses/5.webp" alt="Gestión de Residuos y Recogida de Basura"
-								style="border-radius: 5px;">
-						</div>
+							<img src="images/courses/5.webp" loading="lazy" alt="Gestión de Residuos y Recogida de Basura" style="border-radius: 5px;">
+						</div>						
 						<div class="course-body">
 							<h4 class="c-title" style="margin-top: 10px;">Gestión de Residuos</h4>
 							<p style="text-align: justify;">Una disposición inadecuada de los residuos conduce a
@@ -399,7 +353,7 @@
 					<!-- Single Course -->
 					<div class="single-course">
 						<div class="course-head overlay">
-							<img src="images/courses/6.webp" alt="Emisiones de Carbono en Viajes en Avión"
+							<img src="images/courses/6.webp" loading="lazy" alt="Emisiones de Carbono en Viajes en Avión"
 								style="border-radius: 5px;">
 						</div>
 						<div class="course-body">
@@ -418,7 +372,7 @@
 					<div class="single-course">
 						<div class="course-head overlay">
 							<img src="images/courses/7.webp" alt="Deforestación y Emisiones de Carbono"
-								style="border-radius: 5px;">
+								style="border-radius: 5px;" loading="lazy">
 						</div>
 						<div class="course-body">
 							<h4 class="c-title" style="margin-top: 10px;">Deforestación</h4>
@@ -464,17 +418,6 @@
 			</div>
 		</div>
 	</section>
-
-	<!--Anuncio de Google AdSense 2022-->
-	<!-- Inicio del anuncio de Google AdSense -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
-		crossorigin="anonymous"></script>
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="5569471585"
-		data-ad-format="auto" data-full-width-responsive="true"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<!-- Fin del anuncio de Google AdSense -->
 
 	<article>
 		<section class="events section">
@@ -659,22 +602,12 @@
 				<div class="row">
 					<div class="col-lg-6 offset-lg-3 col-12">
 						<div class="section-title bg">
-							<h2>¿Cómo calcular nuestra huella de Carbono?</h2>
+							<h2>¿Cómo <span>calcular nuestra huella de Carbono?</span></h2>
 							<div class="icon"><i class="fa fa-calculator"></i></div>
 						</div>
 					</div>
 				</div>
-				<!--Anuncio de Google AdSense 2022-->
-				<!-- Inicio del anuncio de Google AdSense -->
-				<script async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
-					crossorigin="anonymous"></script>
-				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116"
-					data-ad-slot="2013369953" data-ad-format="auto" data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-				<!-- Fin del anuncio de Google AdSense -->
+
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="course-body" style="text-align: justify;">
@@ -790,7 +723,7 @@
 			<div class="row">
 				<div class="col-lg-5 col-12">
 					<div class="faq-image">
-						<img src="images/courses/faq1.png" alt="Green Planet">
+						<img src="images/courses/faq1.png" loading="lazy" alt="Green Planet">
 					</div>
 				</div>
 				<div class="col-lg-7 col-12">
@@ -918,18 +851,6 @@
 		</div>
 	</section>
 
-
-	<!--Anuncio de Google AdSense 2022-->
-	<!-- Inicio del anuncio de Google AdSense -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
-		crossorigin="anonymous"></script>
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="5460788234"
-		data-ad-format="auto" data-full-width-responsive="true"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<!-- Fin del anuncio de Google AdSense -->
-
 	<!-- Footer -->
 	<footer class="footer section">
 		<!-- Footer Top -->
@@ -941,7 +862,6 @@
 						<div class="single-widget about">
 							<h2>Acerca de CarbonZero</h2>
 							<ul class="list">
-								<!-- <li><i class="fa fa-phone"></i>Phone: +123 456-7890 </li> -->
 								<li><i class="fa fa-envelope"></i><a>tristardevelopsf@gmail.com</a></li>
 								<li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
 							</ul>
@@ -949,7 +869,8 @@
 							<ul class="social">
 								<li class="active"><a href="https://www.instagram.com/tristardevelops/"
 										target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/tristardevelops" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
 							</ul>
 							<!-- End Social -->
 						</div>
@@ -1009,8 +930,10 @@
 					<div class="col-12">
 						<!-- Copyright -->
 						<div class="copyright">
-							<p>© Copyright CarbonZero <span id="currentYear"></span>. <a href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar Develops</a></p>
-						</div>						
+							<p>© Copyright CarbonZero 2023. <a
+									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
+									Develops</a></p>
+						</div>					
 						<!--/ End Copyright -->
 					</div>
 				</div>
@@ -1026,17 +949,11 @@
 	<!-- Colors JS-->
 	<script src="js/colors.js"></script>
 	<!-- Popper JS-->
-	<script src="js/popper.min.js"></script>
 	<!-- Bootstrap JS-->
-	<script src="js/bootstrap.min.js"></script>
 	<!-- Owl Carousel JS-->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Jquery Steller JS -->
 	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Final Countdown JS -->
-	<script src="js/finalcountdown.min.js"></script>
-	<!-- Fancy Box JS-->
-	<script src="js/facnybox.min.js"></script>
 	<!-- Magnific Popup JS-->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<!-- Circle Progress JS -->
@@ -1048,17 +965,13 @@
 	<!-- Jquery Steller JS-->
 	<script src="js/cube-portfolio.min.js"></script>
 	<!-- Slick Nav JS-->
-	<script src="js/slicknav.min.js"></script>
-	<!-- Easing JS-->
-	<script src="js/easing.min.js"></script>
+	<script src="js/slicknav.min.js"></script>					
 	<!-- Waypoints JS-->
 	<script src="js/waypoints.min.js"></script>
 	<!-- Counter Up JS -->
 	<script src="js/jquery.counterup.min.js"></script>
 	<!-- Scroll Up JS-->
 	<script src="js/jquery.scrollUp.min.js"></script>
-	<!-- Gmaps JS-->
-	<script src="js/gmaps.min.js"></script>
 	<!-- Main JS-->
 	<script src="js/main.js"></script>
 
