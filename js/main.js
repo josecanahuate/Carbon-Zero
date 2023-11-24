@@ -1,17 +1,13 @@
-
-
 (function($) {
     "use strict";
-     $(document).on('ready', function() {	
-	
+     $(document).on('ready', function() {
 		/*===============================
 			Search Form JS
 		=================================*/
 		$('.search-area .icon').on( "click", function(){
 			$('.search-area').toggleClass('active');
-		});		
-		
-		/*===============================
+		});
+		/*==============================
 			Mobile Menu JS
 		=================================*/
 		$('.menu').slicknav({
@@ -19,17 +15,14 @@
 			duration: 600,
 			closeOnClick:true,
 		});
-		
 
 		/*================================
 			Nice Select JS
-		==================================*/ 
+		==================================*/
 		$('select').niceSelect();
-		
-		
 		/*================================
 			Course Single Slider JS
-		==================================*/ 
+		==================================*/
 		$('.course-single-gallery').owlCarousel({
 			items:1,
 			autoplay:true,
@@ -44,10 +37,9 @@
 			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 			dots:false
 		});
-		
 		/*================================
 			Testimonials JS
-		==================================*/ 
+		==================================*/
 		$('.testimonial-slider').owlCarousel({
 			items:1,
 			autoplay:false,
@@ -60,12 +52,10 @@
 			center:false,
 			nav:false,
 			dots:true,
-		});	
-		
-		
+		});
 		/*================================
 			News Slider JS
-		==================================*/ 
+		==================================*/
 		$('.news-slider').owlCarousel({
 			autoplay:false,
 			autoplayTimeout:3500,
@@ -94,8 +84,7 @@
 					items:2,
 				},
 			}
-		});	
-		
+		});
 		/*================================
 			Events Slider JS
 		==================================*/
@@ -113,8 +102,7 @@
 			nav:true,
 			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 			dots:false,
-		});	
-		
+		});
 		/*================================
 			Clients Slider JS
 		==================================*/
@@ -142,27 +130,8 @@
 					items:4,
 				},
 			}
-		});	
-		
-		
-		/*================================
-			SPINNER START
-		==================================*/
-/* 		document.addEventListener("DOMContentLoaded", function () {
-			// Show the spinner when the page starts loading
-			document.getElementById("spinner").style.display = "flex";
-		
-			// Hide the spinner when the page is fully loaded
-			window.addEventListener("load", function () {
-				document.getElementById("spinner").style.display = "none";
-			});
-		}); */
-		/*================================
-			SPINNER END
-		==================================*/
+		});
 
-
-		
 		/*================================
 			Image Gallery JS
 		==================================*/
@@ -200,7 +169,6 @@
 			lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
 		});
 
-	
 		/*================================
 			CAROUSEL IMAGE CHANGE
 		==================================*/
@@ -216,26 +184,26 @@
 		  ];
 		  let currentIndex = 0;
 		  const intervalDuration = 300000; // 5 minutes
-		  
+		  function preloadImages() {
+			for (let i = 0; i < images.length; i++) {
+			  const img = new Image();
+			  img.src = images[i];
+			}
+		  }
 		  function changeBackgroundImage() {
 			const imageContainer = document.getElementById('images');
 			imageContainer.style.backgroundImage = `url(${images[currentIndex]})`;
 			currentIndex = (currentIndex + 1) % images.length;
 		  }
-		  
+		  preloadImages(); // Precargar imágenes al cargar la página
 		  setInterval(changeBackgroundImage, intervalDuration);
-		  
-
-
 		/*================================
 			CounterUp JS
 		==================================*/
 		$('.counter').counterUp({
 			delay: 10,
 			time: 4000
-			
-		});	
-		
+		});
 		/*================================
 			Circle JS
 		==================================*/
@@ -244,8 +212,6 @@
 				color: '#05C46B'
 			}
 		})
-		
-		
 		/*================================
 			Faqs JS
 		==================================*/
@@ -253,7 +219,6 @@
             $(".panel").removeClass("active");
             $(this).addClass("active");
 		});
-		
 		/*================================
 			VideoPopup JS
 		==================================*/
@@ -262,7 +227,6 @@
 			removalDelay: 300,
 			mainClass: 'mfp-fade'
 		});
-	
 		/*================================
 			Parallax JS
 		==================================*/
@@ -273,11 +237,10 @@
 			verticalOffset: 0,
             horizontalScrolling: false
         });
-		
 
 		/*=====================================
 			Final CountDown
-		======================================*/ 
+		======================================*/
 		$('[data-countdown]').each(function() {
 			var $this = $(this),
 				finalDate = $(this).data('countdown');
@@ -287,8 +250,6 @@
 				));
 			});
 		});
-		
-		
 		/*================================
 			ScrollUp JS
 		==================================*/
@@ -308,9 +269,7 @@
 			activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 			zIndex: 2147483647           // Z-Index for the overlay
 		});
-	
 	});
-		
 		/*================================
 			Preloader JS
 		==================================*/

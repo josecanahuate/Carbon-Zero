@@ -162,7 +162,6 @@ document.getElementById('calculateButton').addEventListener('click', function ()
       const emissionsResultElement = document.getElementById('emissionsResult');
       emissionsResultElement.textContent = `${totalEmissions.toFixed(2)} kg CO2`;
 
-     
       function updateProgressBar() {
         const progressBar = document.getElementById('progress-bar');
         const progressBarText = document.getElementById('progress-bar-text');
@@ -208,6 +207,6 @@ document.getElementById('calculateButton').addEventListener('click', function ()
 
     },3300);
   });
-  
+
 });
 });

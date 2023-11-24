@@ -1,770 +1,932 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>CarbonZero - Calculadora de Huella de Carbono Empresarial</title>
 
-<head>
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>CarbonZero - Calculadora de Huella de Carbono Empresarial</title>
+    <meta
+      name="description"
+      content="Calculadora de Huella de Carbono Empresarial: Mide, Reduce y Protege el Medio Ambiente. Cuantifica el Impacto Ambiental de tu Empresa con Nuestra Calculadora Gratis."
+    />
+    <meta
+      name="copyright"
+      content="© 2023 CarbonZero. Todos los derechos reservados."
+    />
+    <meta
+      name="keywords"
+      content="huella de carbono empresarial, calcular huella de carbono, reducción de emisiones, sostenibilidad empresarial, impacto ambiental corporativo, huella ecológica de empresas, calculadora ambiental empresarial"
+    />
+    <meta name="author" content="Tristar Develops - CarbonZero" />
+    <meta name="theme-color" content="#28a745" />
 
-	<meta name="description"
-		content="Calculadora de Huella de Carbono Empresarial: Mide, Reduce y Protege el Medio Ambiente. Cuantifica el Impacto Ambiental de tu Empresa con Nuestra Calculadora Gratis.">
-	<meta name='copyright' content='© 2023 CarbonZero. Todos los derechos reservados.'>
-	<meta name="keywords"
-		content="huella de carbono empresarial, calcular huella de carbono, reducción de emisiones, sostenibilidad empresarial, impacto ambiental corporativo, huella ecológica de empresas, calculadora ambiental empresarial">
-	<meta name="author" content="Tristar Develops - CarbonZero">
-	<meta name="theme-color" content="#28a745" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+    <!-- Meta Tags APPLE SAFARI-->
+    <meta
+      name="apple-mobile-web-app-title"
+      content="CarbonZero - Calculadora de Huella de Carbono"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis."
+    />
 
-	<!-- Meta Tags APPLE SAFARI-->
-	<meta name="apple-mobile-web-app-title" content="CarbonZero - Calculadora de Huella de Carbono">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="Calculadora de Huella de Carbono: Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis.">
+    <!-- Meta Tags MICROSOFT TILES-->
+    <meta name="msapplication-TileImage" content="microsofttiles.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta name="msapplication-starturl" content="/index.html" />
 
-	<!-- Meta Tags MICROSOFT TILES-->
-	<meta name="msapplication-TileImage" content="microsofttiles.png">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-navbutton-color" content="#ffffff">
-	<meta name="msapplication-starturl" content="/index.html">
+    <!-- Canonical URL-->
+    <link
+      rel="canonical"
+      href="https://carbonzero.lat/calculadora_personal.html"
+    />
 
-	<!-- Canonical URL-->
-	<link rel="canonical" href="https://carbonzero.lat/calculadora_personal.html">
+    <!-- Web Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <!-- Preload de Imágenes de la pagina empresa -->
+    <link rel="preload" href="images/courses/empresa1.webp" as="image" />
 
-	<!-- Web Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-		
-	<!-- Preload de Imágenes de la pagina empresa -->
-	<img src="images/courses/empresa1.webp" alt="empresa" style="display: none;">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Slick Nav CSS -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Magnific Popup -->
+    <!-- Eduland Stylesheet -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Eduland Colors -->
+    <link rel="stylesheet" href="css/colors/color1.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">	
-	<!-- Slick Nav CSS -->
-	<link rel="stylesheet" href="css/slicknav.min.css">
-	<!-- Magnific Popup -->
-	<!-- Eduland Stylesheet -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<!-- Eduland Colors -->
-	<link rel="stylesheet" href="css/colors/color1.css">
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--METAGRAPH REDES SOCIALES FB-WS---->
+    <meta property="og:url" content="https://carbonzero.lat/" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="CarbonZero - Calculadora de Huella de Carbono"
+    />
+    <meta
+      property="og:description"
+      content="Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis"
+    />
+    <meta property="og:image" content="https://i.imgur.com/HZWeEPk.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:aspect_ratio" content="1.91" />
+    <meta property="og:site_name" content="CarbonZero" />
 
-	<!--METAGRAPH REDES SOCIALES FB-WS---->
-	<meta property="og:url" content="https://carbonzero.lat/">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="CarbonZero - Calculadora de Huella de Carbono">
-	<meta property="og:description"
-		content="Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis">
-	<meta property="og:image" content="https://i.imgur.com/HZWeEPk.png">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:image:aspect_ratio" content="1.91">
-	<meta property="og:site_name" content="CarbonZero">
+    <!--METAGRAPH TWITTER---->
+    <meta property="twitter:url" content="https://carbonzero.lat/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@TristarDev" />
+    <meta
+      property="twitter:title"
+      content="CarbonZero - Calculadora de Huella de Carbono"
+    />
+    <meta
+      property="twitter:description"
+      content="Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis"
+    />
+    <meta property="og:image" content="https://i.imgur.com/HZWeEPk.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-	<!--METAGRAPH TWITTER---->
-	<meta property="twitter:url" content="https://carbonzero.lat/">
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:creator" content="@TristarDev">
-	<meta property="twitter:title" content="CarbonZero - Calculadora de Huella de Carbono">
-	<meta property="twitter:description"
-		content="Mide, Reduce y Protege el Medio Ambiente. Cuantifica tu Impacto Ambiental con Nuestra Calculadora Gratis">
-	<meta property="og:image" content="https://i.imgur.com/HZWeEPk.png">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
+    <!--GOOGLE ADSENSE---->
+        <meta name="google-adsense-account" content="ca-pub-4434685305331116" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
+     crossorigin="anonymous"></script>
 
-	<!--GOOGLE ADSENSE---->
-	<meta name="google-adsense-account" content="ca-pub-4434685305331116">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTJKBM37SJ"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
-
-	gtag('config', 'G-QTJKBM37SJ');
-</script>
-
-
-<body>
-
-	<script type="module" src="js/fbasonfi.js"></script>							
-
-	<!-- Header -->
-	<header class="header">
-		<!-- Header Inner -->
-		<div class="header-inner overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-12">
-						<!-- Logo -->
-						<div class="logo">
-							<a href="index.html"><img src="images/courses/logo3.png"
-									style="height: 60px; margin-top: -17px;" alt="CarbonZero Logo">CarbonZero</a>
-						</div>
-						<!--/ End Logo -->
-
-						<div class="mobile-menu"></div>
-					</div>
-					<div class="col-lg-9 col-md-9 col-12">
-						<div class="menu-bar">
-							<nav class="navbar navbar-default">
-								<div class="navbar-collapse">
-									<!-- Main Menu -->
-									<ul id="nav" class="nav menu navbar-nav">
-										<li><a href="index.html"><i class="fa fa-home"></i>Inicio</a></li>
-										<li><a href="personas.html"><i class="fa fa-recycle"></i>Acciones</a></li>
-										<li class="active"><a href="#"><i class="fa fa-calculator"></i>Calculadora</a>
-											<ul class="dropdown">
-												<li><a href="calculadora_personal.html">Personal</a></li>
-												<li><a href="calculadora_empresa.html">Empresa</a></li>
-											</ul>
-										</li>
-										<li><a href="recursos.html"><i class="fa fa-sun-o"></i>Recursos</a></li>
-										<li><a href="nosotros.html"><i class="fa fa-user"></i>Nosotros</a></li>
-									</ul>
-									<!-- End Main Menu -->
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Header Inner -->
-	</header>
-	<!--/ End Header -->
-
-
-	<!-- Breadcrumb -->
-	<div class="breadcrumbs overlay" style="background-image:url('images/courses/empresa1.webp')">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-6 col-12">
-					<h2>Calculadora de Huella de Carbono Empresarial</h2>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<ul class="bread-list">
-						<li><a href="index.html">Inicio<i class="fa fa-angle-right"></i></a></li>
-						<li class="active"><a>Calculadora Empresarial</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ End Breadcrumb -->
-
-	<!-- Teachers -->
-	<section class="teachers archive sectioncompany">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 col-12">
-					<div class="section-title bg" style="margin-top: 30px;">
-						<h2>Calculadora <span> de Emisiones de CO2 Empresariales</span></h2>
-						<p>Evaluando el Impacto Ambiental en las Emisiones Empresariales</p>
-						<div class="icon"><i class="fa fa-calculator"></i></div>
-					</div>
-				</div>
-
-				<!--Anuncio de Google AdSense 2022-->
-				<!-- Inicio del anuncio de Google AdSense -->
-<!-- 				<script async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116"
-					crossorigin="anonymous"></script>
-				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116"
-					data-ad-slot="8923474806" data-ad-format="auto" data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script> -->
-				<!-- Fin del anuncio de Google AdSense -->
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-5" style="margin-bottom: 150px; margin-top: 30px;">
-							<form id="loan-form">
-								<div class="alert alert-warning alert-dismissible fade show" role="alert">
-									<strong>Campos no aplicables, déjarlos en blanco.</strong>
-									<button type="button" class="btn-close" data-bs-dismiss="alert"
-										aria-label="Close"></button>
-								</div>
-
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon dollar"
-											style="background-color: #05C46B;">$</span>
-										<input type="number" class="form-control" id="gasolina_expenses"
-											placeholder="¿Gastos mensuales en Gasolina de tu empresa?">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon dollar"
-											style="background-color: #05C46B;">$</span>
-										<input type="number" class="form-control" id="diesel_expenses"
-											placeholder="¿Gastos mensuales en Gasoil (diesel) de tu empresa?">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon dollar"
-											style="background-color: #05C46B;">$</span>
-										<input type="number" class="form-control" id="gasnatural_expenses"
-											placeholder="¿Gastos mensuales en Gas natural de tu empresa?">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="input-group">
-										<span class="input-group-addon dollar electricidad"
-											style="background-color: #05C46B;">$</span>
-										<input type="number" class="form-control" id="electricity_expenses"
-											placeholder="¿Gastos mensuales en electricidad de tu empresa?">
-									</div>
-								</div>
-
-								<div class="form-group">
-									<input type="submit" value="Calcular"
-										style="background-color: #05C46B; margin-top: 20px; height: 3rem; font-size:x-large;"
-										class="btn btn-dark btn-block">
-								</div>
-							</form>
-						</div> <!-- END COLUMN	 -->
-
-						<!-- LOADER -->
-						<div class="col-md-2">
-							<div id="loading" class="gif">
-								<img src="images/courses/empresa.gif" alt="">
-							</div>
-						</div>
-
-						<!-- Columna de 6 para los resultados -->
-						<div class="col-md-5 huellaempresa">
-							<div id="results" class="pt-4" style="margin-top: 5px;">
-								<h5 class="mb-4" style="text-align: center;">HUELLA DE CARBONO ESTIMADA EMITIDA POR
-									TU EMPRESA</h5>
-
-								<div class="form-group gastosmensuales">
-									<div class="result-item">
-										<label>Huella de Carbono Mensual</label>
-										<p id="monthly-payment" class="result-value"></p>
-									</div>
-								</div>
-
-								<div class="form-group gastostotales">
-									<div class="result-item">
-										<label>Gastos Mensuales Totales</label>
-										<p id="total-payment" class="result-value"></p>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div id="huella-carbono-value"></div>
-								</div>
-
-								<div class="form-group">
-									<div class="progress" style="height: 2rem; text-align: justify;">
-										<div id="progress-bar" class="progress-bar" role="progressbar"
-											style="width: 0;"></div>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="result-item">
-										<p id="message" class="result-value"></p>
-									</div>
-								</div>
-
-								<a class="consejos" href="personas.html">Recomendaciones para reducir tu
-									Huella de Carbono</a><br>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<script>
-					// Listen for submit
-					document.getElementById('loan-form').addEventListener('submit', function (e) {
-						e.preventDefault();
-
-						// Hide results and show loader
-						document.getElementById('results').style.display = 'none';
-						document.getElementById('loading').style.display = 'block';
-
-
-						// Set TimeOut to calculate results after 3 seconds
-						setTimeout(calculateResults, 3000);
-					});
-
-					// Calculate Results
-					function calculateResults() {
-						console.log('Calculating...');
-						// UI Variables
-						const gasolinaExpenses = parseFloat(document.getElementById('gasolina_expenses').value) || 0;
-						const electricityExpenses = parseFloat(document.getElementById('electricity_expenses').value) || 0;
-						const dieselExpenses = parseFloat(document.getElementById('diesel_expenses').value) || 0;
-						const gasNaturalExpenses = parseFloat(document.getElementById('gasnatural_expenses').value) || 0;
-
-						const monthlyPayment = document.getElementById('monthly-payment');
-						const totalPayment = document.getElementById('total-payment');
-
-						// Calculations
-						const gasolinaPrincipal = gasolinaExpenses * 0.00218;
-						const electricityPrincipal = electricityExpenses * 0.000309;
-						const dieselPrincipal = dieselExpenses * 0.002467;
-						const gasnaturalPrincipal = gasNaturalExpenses * 0.000182;
-
-						// Compute Monthly Payments
-						const monthly = gasolinaPrincipal + electricityPrincipal + dieselPrincipal + gasnaturalPrincipal;
-						const total = gasolinaExpenses + electricityExpenses + dieselExpenses + gasNaturalExpenses;
-
-						if (isFinite(monthly)) {
-							monthlyPayment.textContent = `${monthly.toFixed(2)} Toneladas Métricas`;
-							totalPayment.textContent = total.toFixed(2);
-
-							// Show results and hide loader
-							document.getElementById('results').style.display = 'block';
-							document.getElementById('loading').style.display = 'none';
-
-
-							// Update the progress bar after the values are calculated
-							updateProgressBar(monthly);
-						} else {
-							showError('Por favor, verifica tus números');
-						}
-					}
-
-					// Show Error
-					function showError(error) {
-						// Hide results and loader
-						document.getElementById('results').style.display = 'none';
-						document.getElementById('loading').style.display = 'none';
-
-
-						// Create a div
-						const errorDiv = document.createElement('div');
-						errorDiv.className = 'alert alert-danger';
-						errorDiv.appendChild(document.createTextNode(error));
-
-						// Insert error above heading
-						const card = document.querySelector('.card');
-						const heading = document.querySelector('.heading');
-						card.insertBefore(errorDiv, heading);
-
-						// Clear error after 3 seconds
-						setTimeout(() => {
-							errorDiv.remove();
-						}, 3000);
-					}
-
-					// Update Progress Bar
-					function updateProgressBar(monthly) {
-						const progressBar = document.getElementById('progress-bar');
-						const messageField = document.getElementById('message');
-
-						if (isNaN(monthly) || monthly <= 0) {
-							return;
-						}
-
-						let estiloProgressBar, anchoProgressBar, textoProgressBar, mensajetexto;
-
-						if (monthly <= 25) {
-							estiloProgressBar = 'bg-success';
-							anchoProgressBar = '25%';
-							textoProgressBar = '¡Bien!';
-							mensajetexto = "¡Felicidades! Tu empresa está haciendo un gran esfuerzo por el planeta. Tu huella de carbono es realmente baja. 🌱🌍"
-						} else if (monthly <= 50) {
-							estiloProgressBar = 'bg-info';
-							anchoProgressBar = '50%';
-							textoProgressBar = '¡Hora de actuar!';
-							mensajetexto = "¡Hora de actuar! La emisión de carbono de tu empresa corresponde a la deforestación de 50 a 150 árboles. ¡Juntos podemos reducirla y hacer un impacto positivo! 💪🌳"
-						} else if (monthly <= 75) {
-							estiloProgressBar = 'bg-warning';
-							anchoProgressBar = '75%';
-							textoProgressBar = '¡Atención!';
-							mensajetexto = "¡Atención! Tu huella de carbono corresponde a la deforestación de 250 árboles. Es hora de tomar medidas y cambiar el rumbo hacia la sostenibilidad. 🚀🌿"
-						} else {
-							estiloProgressBar = 'bg-danger';
-							anchoProgressBar = '100%';
-							textoProgressBar = '¡Alerta Roja!';
-							mensajetexto = "Tu empresa tiene una huella de carbono extremadamente alta. Tu huella de carbono corresponde a la deforestación de 300 a 1000 árboles. La crisis climática está llamando a la puerta.🌎🔥💔"
-						}
-
-						progressBar.className = `progress-bar ${estiloProgressBar}`;
-						progressBar.style.width = anchoProgressBar;
-						progressBar.textContent = textoProgressBar;
-						messageField.textContent = mensajetexto;
-					}
-
-					// Call the function to update the progress bar
-					updateProgressBar(0);
-				</script>
-
-			</div><!--/ End Row -->
-		</div><!--/ End Container -->
-	</section>
-	<!--/ End Teachers -->
-
-
-	<!--Anuncio de Google AdSense 2022-->
-	<!-- Inicio del anuncio de Google AdSense -->
-<!-- 	<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434685305331116" crossorigin="anonymous"></script>
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4434685305331116" data-ad-slot="7610393130"
-		data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PDXZH2GN2G"></script>
 	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script> -->
-	<!-- Fin del anuncio de Google AdSense -->
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-PDXZH2GN2G');
+	</script>
 
 
-	<!-- Footer -->
-	<footer class="footer section">
-		<!-- Footer Top -->
-		<div class="footer-top overlay copyabout">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-12">
-						<!-- About -->
-						<div class="single-widget about">
-							<h2>Acerca de CarbonZero</h2>
-							<ul class="list">
-										
-								<li><i class="fa fa-envelope"></i><a>tristardevelopsf@gmail.com</a></li>
-								<li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
-							</ul>
-							<!-- Social -->
-							<ul class="social">
-								<li class="active"><a href="https://www.instagram.com/tristardevelops/"
-										target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="https://www.facebook.com/tristardevelops" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						</div>
-						<!--/ End About -->
-					</div>
-
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Páginas</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i><a href="#">Inicio</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="personas.html">Acciones</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="recursos.html">Recursos</a></li>
-								<li><i class="fa fa-angle-right"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-							</ul>
-
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Calculadoras Ambientales</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i><a href="calculadora_personal.html">Personal</a>
-								</li>
-								<li><i class="fa fa-angle-right"></i><a href="calculadora_empresa.html">Empresarial</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-3 col-12">
-						<div class="single-widget list">
-							<h2>Privacidad y Condiciones</h2>
-							<ul>
-								<li><i class="fa fa-angle-right"></i> <a target="_blank"
-										href="https://www.privacypolicytemplate.net/live.php?token=Pj1gUdFGY1O19pjr6uiLyRpwAxhXQ6BO">Política
-										de privacidad</a></li>
-
-								<li><i class="fa fa-angle-right"></i> <a target="_blank"
-										href="https://www.privacypolicies.com/live/1441df6e-bce6-4e7e-9994-0a46b454ebb2">Términos
-										y Condiciones</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Footer Top -->
-
-		<!-- Footer Bottom -->
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<!-- Copyright -->
-						<div class="copyright">
-							<p>© Copyright CarbonZero 2023. <a
-									href="https://www.instagram.com/tristardevelops/" target="_blank">Tristar
-									Develops</a></p>
-						</div>
-						<!--/ End Copyright -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Footer Bottom -->
-	</footer>
-	<!--/ End Footer -->
-
-	<style>
-		#loading,
-		#results {
-			display: none;
-		}
-
-		a {
-			text-decoration: none;
-			/* Esto quita el subrayado de todos los enlaces */
-		}
-
-		#loading {
-			width: 100%;
-			margin-top: 100px;
-			margin-left: 20px;
-		}
+  </head>
 
 
-		@media (min-width: 320px) {
-			#loading {
-				width: 50%;
-				margin-top: -130px;
-				margin-left: 70px;
-			}
+  <body>
+    <script async type="module" src="js/fbasonfi.js"></script>
+    <!-- Header -->
+    <header class="header">
+      <!-- Header Inner -->
+      <div class="header-inner overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-12">
+              <!-- Logo -->
+              <div class="logo">
+                <a href="index.html"
+                  ><img
+                    src="images/courses/logo3.png"
+                    style="height: 60px; margin-top: -17px"
+                    alt="CarbonZero Logo"
+                  />CarbonZero</a
+                >
+              </div>
+              <!--/ End Logo -->
 
-			.gastosmensuales,
-			.gastostotales {
-				text-align: center;
-			}
+              <div class="mobile-menu"></div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-12">
+              <div class="menu-bar">
+                <nav class="navbar navbar-default">
+                  <div class="navbar-collapse">
+                    <!-- Main Menu -->
+                    <ul id="nav" class="nav menu navbar-nav">
+                      <li>
+                        <a href="index.html"
+                          ><i class="fa fa-home"></i>Inicio</a
+                        >
+                      </li>
+                      <li>
+                        <a href="personas.html"
+                          ><i class="fa fa-recycle"></i>Acciones</a
+                        >
+                      </li>
+                      <li class="active">
+                        <a href="#"
+                          ><i class="fa fa-calculator"></i>Calculadora</a
+                        >
+                        <ul class="dropdown">
+                          <li>
+                            <a href="calculadora_personal.html">Personal</a>
+                          </li>
+                          <li>
+                            <a href="calculadora_empresa.html">Empresa</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="recursos.html"
+                          ><i class="fa fa-sun-o"></i>Recursos</a
+                        >
+                      </li>
+                      <li>
+                        <a href="nosotros.html"
+                          ><i class="fa fa-user"></i>Nosotros</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- End Main Menu -->
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Header Inner -->
+    </header>
+    <!--/ End Header -->
 
-			.huellaempresa {
-				margin-top: -150px;
-			}
-		}
+    <!-- Breadcrumb -->
+    <div
+      class="breadcrumbs overlay"
+      style="background-image: url('images/courses/empresa1.webp')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-12">
+            <h2>Calculadora de Huella de Carbono Empresarial</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <ul class="bread-list">
+              <li>
+                <a href="index.html">Inicio<i class="fa fa-angle-right"></i></a>
+              </li>
+              <li class="active"><a>Calculadora Empresarial</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ End Breadcrumb -->
 
-		@media (min-width: 360px) {
-			#loading {
-				width: 50%;
-				margin-top: -100px;
-				margin-left: 90px;
-			}
+    <!-- Teachers -->
+    <section class="teachers archive sectioncompany">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-12">
+            <div class="section-title bg" style="margin-top: 30px">
+              <h2>
+                Calculadora <span> de Emisiones de CO2 Empresariales</span>
+              </h2>
+              <p>
+                Evaluando el Impacto Ambiental en las Emisiones Empresariales
+              </p>
+              <div class="icon"><i class="fa fa-calculator"></i></div>
+            </div>
+          </div>
 
-			.gastosmensuales,
-			.gastostotales {
-				text-align: center;
-			}
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-5"
+                style="margin-bottom: 150px; margin-top: 30px"
+              >
+                <form id="loan-form">
+                  <div
+                    class="alert alert-warning alert-dismissible fade show"
+                    role="alert"
+                  >
+                    <strong>Campos no aplicables, déjarlos en blanco.</strong>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
 
-			.huellaempresa {
-				margin-top: -150px;
-			}
-		}
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span
+                        class="input-group-addon dollar"
+                        style="background-color: #05c46b"
+                        >$</span
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="gasolina_expenses"
+                        placeholder="¿Gastos mensuales en Gasolina de tu empresa?"
+                      />
+                    </div>
+                  </div>
 
-		@media (min-width: 375px) {
-			#loading {
-				width: 50%;
-				margin-top: -150px;
-				margin-left: 100px;
-			}
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span
+                        class="input-group-addon dollar"
+                        style="background-color: #05c46b"
+                        >$</span
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="diesel_expenses"
+                        placeholder="¿Gastos mensuales en Gasoil (diesel) de tu empresa?"
+                      />
+                    </div>
+                  </div>
 
-			.gastosmensuales,
-			.gastostotales {
-				text-align: center;
-			}
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span
+                        class="input-group-addon dollar"
+                        style="background-color: #05c46b"
+                        >$</span
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="gasnatural_expenses"
+                        placeholder="¿Gastos mensuales en Gas natural de tu empresa?"
+                      />
+                    </div>
+                  </div>
 
-			.huellaempresa {
-				margin-top: -130px;
-			}
-		}
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span
+                        class="input-group-addon dollar electricidad"
+                        style="background-color: #05c46b"
+                        >$</span
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="electricity_expenses"
+                        placeholder="¿Gastos mensuales en electricidad de tu empresa?"
+                      />
+                    </div>
+                  </div>
 
-		@media (min-width: 734px) {
-			#loading {
-				width: 50%;
-				margin-top: -150px;
-				margin-left: 190px;
-			}
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      value="Calcular"
+                      style="
+                        background-color: #05c46b;
+                        margin-top: 20px;
+                        height: 3rem;
+                        font-size: x-large;
+                      "
+                      class="btn btn-dark btn-block"
+                    />
+                  </div>
+                </form>
+              </div>
+              <!-- END COLUMN	 -->
 
-			.huellaempresa {
-				margin-top: -150px;
-			}
-		}
+              <!-- LOADER -->
+              <div class="col-md-2">
+                <div id="loading" class="gif">
+                  <img src="images/courses/empresa.gif" alt="" />
+                </div>
+              </div>
 
-		@media (min-width: 540px) {
-			#loading {
-				width: 50%;
-				margin-top: -150px;
-				margin-left: 170px;
-			}
+              <!-- Columna de 6 para los resultados -->
+              <div class="col-md-5 huellaempresa">
+                <div id="results" class="pt-4" style="margin-top: 5px">
+                  <h5 class="mb-4" style="text-align: center">
+                    HUELLA DE CARBONO ESTIMADA EMITIDA POR TU EMPRESA
+                  </h5>
 
-			.huellaempresa {
-				margin-top: -150px;
-			}
-		}
+                  <div class="form-group gastosmensuales">
+                    <div class="result-item">
+                      <label>Huella de Carbono Mensual</label>
+                      <p id="monthly-payment" class="result-value"></p>
+                    </div>
+                  </div>
 
-		@media (min-width: 684px) {
-			#loading {
-				width: 50%;
-				margin-top: -150px;
-				margin-left: 170px;
-			}
+                  <div class="form-group gastostotales">
+                    <div class="result-item">
+                      <label>Gastos Mensuales Totales</label>
+                      <p id="total-payment" class="result-value"></p>
+                    </div>
+                  </div>
 
-			.huellaempresa {
-				margin-top: -150px;
-			}
-		}
+                  <div class="form-group">
+                    <div id="huella-carbono-value"></div>
+                  </div>
 
-		@media (min-width: 667px) {
-			#loading {
-				width: 50%;
-				margin-top: -150px;
-				margin-left: 180px;
-			}
-		}
+                  <div class="form-group">
+                    <div
+                      class="progress"
+                      style="height: 2rem; text-align: justify"
+                    >
+                      <div
+                        id="progress-bar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0"
+                      ></div>
+                    </div>
+                  </div>
 
-		@media (min-width:768px) and (max-width: 1024px) {
+                  <div class="form-group">
+                    <div class="result-item">
+                      <p id="message" class="result-value"></p>
+                    </div>
+                  </div>
 
-			#loading {
-				width: 100%;
-				margin-top: 180px;
-				margin-left: 20px;
-			}
+                  <a class="consejos" href="personas.html"
+                    >Recomendaciones para reducir tu Huella de Carbono</a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
 
-			.huellaempresa {
-				margin-top: 10px;
-			}
+          <script>
+            // Listen for submit
+            document
+              .getElementById("loan-form")
+              .addEventListener("submit", function (e) {
+                e.preventDefault();
 
-			.header .navbar {
-				background: none;
-				box-shadow: none;
-				border: none;
-				position: relative;
-				padding: 0;
-				float: right;
-				padding-right: 10px;
-			}
-		}
+                // Hide results and show loader
+                document.getElementById("results").style.display = "none";
+                document.getElementById("loading").style.display = "block";
 
-		@media (min-width:1027px) and (max-width: 1279px) {
+                // Set TimeOut to calculate results after 3 seconds
+                setTimeout(calculateResults, 3000);
+              });
 
-			.huellaempresa {
-				margin-top: 10px
-			}
+            // Calculate Results
+            function calculateResults() {
+              console.log("Calculating...");
+              // UI Variables
+              const gasolinaExpenses =
+                parseFloat(
+                  document.getElementById("gasolina_expenses").value
+                ) || 0;
+              const electricityExpenses =
+                parseFloat(
+                  document.getElementById("electricity_expenses").value
+                ) || 0;
+              const dieselExpenses =
+                parseFloat(document.getElementById("diesel_expenses").value) ||
+                0;
+              const gasNaturalExpenses =
+                parseFloat(
+                  document.getElementById("gasnatural_expenses").value
+                ) || 0;
 
-			#loading {
-				width: 100%;
-				margin-top: 130px;
-				margin-left: 20px;
-			}
+              const monthlyPayment = document.getElementById("monthly-payment");
+              const totalPayment = document.getElementById("total-payment");
 
-			.header .navbar {
-				background: none;
-				box-shadow: none;
-				border: none;
-				position: relative;
-				padding: 0;
-				float: right;
-				padding-right: 10px;
-			}
-		}
+              // Calculations
+              const gasolinaPrincipal = gasolinaExpenses * 0.00218;
+              const electricityPrincipal = electricityExpenses * 0.000309;
+              const dieselPrincipal = dieselExpenses * 0.002467;
+              const gasnaturalPrincipal = gasNaturalExpenses * 0.000182;
 
-		@media (min-width:1280px) {
-			#loading {
-				width: 100%;
-				margin-top: 130px;
-				margin-left: 20px;
-			}
+              // Compute Monthly Payments
+              const monthly =
+                gasolinaPrincipal +
+                electricityPrincipal +
+                dieselPrincipal +
+                gasnaturalPrincipal;
+              const total =
+                gasolinaExpenses +
+                electricityExpenses +
+                dieselExpenses +
+                gasNaturalExpenses;
 
-			.huellaempresa {
-				margin-top: 10px;
-			}
+              if (isFinite(monthly)) {
+                monthlyPayment.textContent = `${monthly.toFixed(
+                  2
+                )} Toneladas Métricas`;
+                totalPayment.textContent = total.toFixed(2);
 
-			.header .navbar {
-				background: none;
-				box-shadow: none;
-				border: none;
-				position: relative;
-				padding: 0;
-				float: right;
-				padding-right: 10px;
-			}
-		}
-	</style>
+                // Show results and hide loader
+                document.getElementById("results").style.display = "block";
+                document.getElementById("loading").style.display = "none";
 
-	<!-- Jquery JS-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate.min.js"></script>
-	<!-- Colors JS-->
-	<script src="js/colors.js"></script>
-	<!-- Popper JS-->
-	
-	<!-- Bootstrap JS-->
-	
-	<!-- Owl Carousel JS-->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Jquery Steller JS -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Final Countdown JS -->
-									
-									
-									
-	<!-- Magnific Popup JS-->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- Circle Progress JS -->
-	<script src="js/circle-progress.min.js"></script>
-	<!-- Nice Select JS -->
-	<!-- <script src="js/niceselect.js"></script>  DESACTIVADA PK ME DUPLICA EL SELECT-->
-	<!-- Jquery Steller JS-->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Jquery Steller JS-->
-	<script src="js/cube-portfolio.min.js"></script>
-	<!-- Slick Nav JS-->
-	<script src="js/slicknav.min.js"></script>
-									
-									
-	<!-- Waypoints JS-->
-	<script src="js/waypoints.min.js"></script>
-	<!-- Counter Up JS -->
-	<script src="js/jquery.counterup.min.js"></script>
-	<!-- Scroll Up JS-->
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<!-- Gmaps JS-->
-	
+                // Update the progress bar after the values are calculated
+                updateProgressBar(monthly);
+              } else {
+                showError("Por favor, verifica tus números");
+              }
+            }
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-		crossorigin="anonymous"></script>
+            // Show Error
+            function showError(error) {
+              // Hide results and loader
+              document.getElementById("results").style.display = "none";
+              document.getElementById("loading").style.display = "none";
 
-	<!-- Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-		crossorigin="anonymous"></script>
+              // Create a div
+              const errorDiv = document.createElement("div");
+              errorDiv.className = "alert alert-danger";
+              errorDiv.appendChild(document.createTextNode(error));
 
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+              // Insert error above heading
+              const card = document.querySelector(".card");
+              const heading = document.querySelector(".heading");
+              card.insertBefore(errorDiv, heading);
 
-	<!-- Main JS-->
-	<script src="js/main.js"></script>
-</body>
+              // Clear error after 3 seconds
+              setTimeout(() => {
+                errorDiv.remove();
+              }, 3000);
+            }
 
+            // Update Progress Bar
+            function updateProgressBar(monthly) {
+              const progressBar = document.getElementById("progress-bar");
+              const messageField = document.getElementById("message");
+
+              if (isNaN(monthly) || monthly <= 0) {
+                return;
+              }
+
+              let estiloProgressBar,
+                anchoProgressBar,
+                textoProgressBar,
+                mensajetexto;
+
+              if (monthly <= 25) {
+                estiloProgressBar = "bg-success";
+                anchoProgressBar = "25%";
+                textoProgressBar = "¡Bien!";
+                mensajetexto =
+                  "¡Felicidades! Tu empresa está haciendo un gran esfuerzo por el planeta. Tu huella de carbono es realmente baja. 🌱🌍";
+              } else if (monthly <= 50) {
+                estiloProgressBar = "bg-info";
+                anchoProgressBar = "50%";
+                textoProgressBar = "¡Hora de actuar!";
+                mensajetexto =
+                  "¡Hora de actuar! La emisión de carbono de tu empresa corresponde a la deforestación de 50 a 150 árboles. ¡Juntos podemos reducirla y hacer un impacto positivo! 💪🌳";
+              } else if (monthly <= 75) {
+                estiloProgressBar = "bg-warning";
+                anchoProgressBar = "75%";
+                textoProgressBar = "¡Atención!";
+                mensajetexto =
+                  "¡Atención! Tu huella de carbono corresponde a la deforestación de 250 árboles. Es hora de tomar medidas y cambiar el rumbo hacia la sostenibilidad. 🚀🌿";
+              } else {
+                estiloProgressBar = "bg-danger";
+                anchoProgressBar = "100%";
+                textoProgressBar = "¡Alerta Roja!";
+                mensajetexto =
+                  "Tu empresa tiene una huella de carbono extremadamente alta. Tu huella de carbono corresponde a la deforestación de 300 a 1000 árboles. La crisis climática está llamando a la puerta.🌎🔥💔";
+              }
+
+              progressBar.className = `progress-bar ${estiloProgressBar}`;
+              progressBar.style.width = anchoProgressBar;
+              progressBar.textContent = textoProgressBar;
+              messageField.textContent = mensajetexto;
+            }
+
+            // Call the function to update the progress bar
+            updateProgressBar(0);
+          </script>
+        </div>
+        <!--/ End Row -->
+      </div>
+      <!--/ End Container -->
+    </section>
+    <!--/ End Teachers -->
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <!-- Footer Top -->
+      <div class="footer-top overlay copyabout">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-12">
+              <!-- About -->
+              <div class="single-widget about">
+                <h2>Acerca de CarbonZero</h2>
+                <ul class="list">
+                  <li>
+                    <i class="fa fa-envelope"></i
+                    ><a>tristardevelopsf@gmail.com</a>
+                  </li>
+                  <li><i class="fa fa-map-o"></i>Panamá, Ciudad Panamá</li>
+                </ul>
+                <!-- Social -->
+                <ul class="social">
+                  <li class="active">
+                    <a
+                      href="https://www.instagram.com/tristardevelops/"
+                      target="_blank"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/tristardevelops"
+                      target="_blank"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- End Social -->
+              </div>
+              <!--/ End About -->
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-12">
+              <div class="single-widget list">
+                <h2>Páginas</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-angle-right"></i><a href="#">Inicio</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i
+                    ><a href="personas.html">Acciones</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i
+                    ><a href="recursos.html">Recursos</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i
+                    ><a href="nosotros.html">Sobre Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-12">
+              <div class="single-widget list">
+                <h2>Calculadoras Ambientales</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-angle-right"></i
+                    ><a href="calculadora_personal.html">Personal</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-right"></i
+                    ><a href="calculadora_empresa.html">Empresarial</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-12">
+              <div class="single-widget list">
+                <h2>Privacidad y Condiciones</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-angle-right"></i>
+                    <a
+                      target="_blank"
+                      href="https://www.privacypolicytemplate.net/live.php?token=Pj1gUdFGY1O19pjr6uiLyRpwAxhXQ6BO"
+                      >Política de privacidad</a
+                    >
+                  </li>
+
+                  <li>
+                    <i class="fa fa-angle-right"></i>
+                    <a
+                      target="_blank"
+                      href="https://www.privacypolicies.com/live/1441df6e-bce6-4e7e-9994-0a46b454ebb2"
+                      >Términos y Condiciones</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Footer Top -->
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Copyright -->
+              <div class="copyright">
+                <p>
+                  © Copyright CarbonZero 2023.
+                  <a
+                    href="https://www.instagram.com/tristardevelops/"
+                    target="_blank"
+                    >Tristar Develops</a
+                  >
+                </p>
+              </div>
+              <!--/ End Copyright -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ End Footer Bottom -->
+    </footer>
+    <!--/ End Footer -->
+
+    <style>
+      #loading,
+      #results {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        /* Esto quita el subrayado de todos los enlaces */
+      }
+
+      #loading {
+        width: 100%;
+        margin-top: 100px;
+        margin-left: 20px;
+      }
+
+      @media (min-width: 320px) {
+        #loading {
+          width: 50%;
+          margin-top: -130px;
+          margin-left: 70px;
+        }
+
+        .gastosmensuales,
+        .gastostotales {
+          text-align: center;
+        }
+
+        .huellaempresa {
+          margin-top: -150px;
+        }
+      }
+
+      @media (min-width: 360px) {
+        #loading {
+          width: 50%;
+          margin-top: -100px;
+          margin-left: 90px;
+        }
+
+        .gastosmensuales,
+        .gastostotales {
+          text-align: center;
+        }
+
+        .huellaempresa {
+          margin-top: -150px;
+        }
+      }
+
+      @media (min-width: 375px) {
+        #loading {
+          width: 50%;
+          margin-top: -150px;
+          margin-left: 100px;
+        }
+
+        .gastosmensuales,
+        .gastostotales {
+          text-align: center;
+        }
+
+        .huellaempresa {
+          margin-top: -130px;
+        }
+      }
+
+      @media (min-width: 734px) {
+        #loading {
+          width: 50%;
+          margin-top: -150px;
+          margin-left: 190px;
+        }
+
+        .huellaempresa {
+          margin-top: -150px;
+        }
+      }
+
+      @media (min-width: 540px) {
+        #loading {
+          width: 50%;
+          margin-top: -150px;
+          margin-left: 170px;
+        }
+
+        .huellaempresa {
+          margin-top: -150px;
+        }
+      }
+
+      @media (min-width: 684px) {
+        #loading {
+          width: 50%;
+          margin-top: -150px;
+          margin-left: 170px;
+        }
+
+        .huellaempresa {
+          margin-top: -150px;
+        }
+      }
+
+      @media (min-width: 667px) {
+        #loading {
+          width: 50%;
+          margin-top: -150px;
+          margin-left: 180px;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        #loading {
+          width: 100%;
+          margin-top: 180px;
+          margin-left: 20px;
+        }
+
+        .huellaempresa {
+          margin-top: 10px;
+        }
+
+        .header .navbar {
+          background: none;
+          box-shadow: none;
+          border: none;
+          position: relative;
+          padding: 0;
+          float: right;
+          padding-right: 10px;
+        }
+      }
+
+      @media (min-width: 1027px) and (max-width: 1279px) {
+        .huellaempresa {
+          margin-top: 10px;
+        }
+
+        #loading {
+          width: 100%;
+          margin-top: 130px;
+          margin-left: 20px;
+        }
+
+        .header .navbar {
+          background: none;
+          box-shadow: none;
+          border: none;
+          position: relative;
+          padding: 0;
+          float: right;
+          padding-right: 10px;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        #loading {
+          width: 100%;
+          margin-top: 130px;
+          margin-left: 20px;
+        }
+
+        .huellaempresa {
+          margin-top: 10px;
+        }
+
+        .header .navbar {
+          background: none;
+          box-shadow: none;
+          border: none;
+          position: relative;
+          padding: 0;
+          float: right;
+          padding-right: 10px;
+        }
+      }
+    </style>
+
+    <!-- Jquery JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <!-- Colors JS-->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Jquery Steller JS -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Final Countdown JS -->
+    <!-- Magnific Popup JS-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Circle Progress JS -->
+    <script src="js/circle-progress.min.js"></script>
+    <!-- Nice Select JS -->
+    <!-- <script src="js/niceselect.js"></script>  DESACTIVADA PK ME DUPLICA EL SELECT-->
+    <!-- Jquery Steller JS-->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Jquery Steller JS-->
+    <script src="js/cube-portfolio.min.js"></script>
+    <!-- Slick Nav JS-->
+    <script src="js/slicknav.min.js"></script>
+    <!-- Waypoints JS-->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Counter Up JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Scroll Up JS-->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Gmaps JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
